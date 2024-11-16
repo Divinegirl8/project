@@ -1,0 +1,117 @@
+/* 
+   @keyframes tearOpen {
+    0% {
+      transform: scaleY(0);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(70);
+    }
+  }
+  
+  @keyframes spreadAndFadeOut {
+    0% {
+      transform: scaleY(0);
+      width: 1px;
+      height: 10px;
+      left: 50%;
+    }
+    
+    100% {
+      width: 100vw; 
+      height: 100vh; 
+      left: 0; 
+      transform: scaleY(100);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .shakingLine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    animation: tearOpen 2s ease-in-out forwards, spreadAndFadeOut 1s 2s forwards;
+    transform-origin: center center; 
+  } 
+  
+  .pageContent {
+    opacity: 0;
+     animation: fadeIn forwards; 
+     animation-delay: 2.9s; 
+  } */
+
+
+
+  
+  
+
+
+  @keyframes tearOpen {
+    0% {
+      transform: scaleY(0);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(70);
+    }
+  }
+  
+  @keyframes spreadAndFadeOut {
+    0% {
+      transform: scaleY(0);
+      width: 1px;
+      height: 100vh;
+      left: 50%;
+    }
+    100% {
+      width: 100vw; 
+      height: 100vh; 
+      left: 0; 
+      transform: scaleY(100);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .shakingLine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%); 
+    animation: tearOpen 2s ease-in-out forwards, spreadAndFadeOut 1s 2s forwards;
+    transform-origin: center center; 
+  }
+  
+  .pageContent {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2.9s;
+  }
+  
