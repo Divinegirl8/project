@@ -24,9 +24,7 @@ const HeroPage: React.FC = () => {
         <div className="bg-gradient-to-b from-black via-black to-transparent h-[100vh] relative">
             <div className="">
 
-                            <div
-                    className="border-gray-500 border-[0.5px] w-[21rem] h-[38rem] rounded-[20px] left-5 top-10 lg:mt-[80px] lg:fixed z-50"
-                >
+                <div className="border-gray-500 border-[0.5px] w-[21rem] h-[38rem] rounded-[20px] left-5 top-10 lg:mt-[80px] lg:fixed z-50">
                    <div className="flex justify-center mt-10">
                    <img src={pix2} className="w-[14rem] h-[14rem] rounded-[20px]" />
                    </div>
@@ -69,10 +67,16 @@ const HeroPage: React.FC = () => {
                
 
                 </div>
+                <div className="flex ml-[25rem] mt-[10rem]">
+    <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
+        <i className="fa-solid fa-house" style={{ color: "#fff", paddingTop: "3px", fontSize:"13px" }}></i>
+        <p className="font-normal text-white font-fontInter uppercase text-[13px]">Introduce</p>
+    </div>
+</div>
 
 
                 <div className="text-center lg:ml-[15rem]">
-                    <p className="lg:pt-[14rem] font-normal text-[68px] text-white font-fontInter">
+                    <p className="lg:pt-[5rem] font-normal text-[68px] text-white font-fontInter">
                         Hi, I am James <span className="text-yellow-600">DivineMercy</span>,
                     </p>
                     
@@ -116,8 +120,8 @@ const HeroPage: React.FC = () => {
 {/* Updated navigation div with square tooltips and thinking shape (triangle on the right) */}
 <div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-5">
     <div className="relative group">
-        <button className="hover:text-yellow-600 text-[2rem] cursor-pointer" onClick={() => scrollToSection(section1Ref)}>
-            {"\u2302"}
+        <button className="hover:text-yellow-600  cursor-pointer" onClick={() => scrollToSection(section1Ref)}>
+        <i className="fa-solid fa-house" style={{color: "#fff"}}></i>
         </button>
         <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
          Home
