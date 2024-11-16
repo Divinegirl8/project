@@ -86,9 +86,7 @@ const HeroPage: React.FC = () => {
 
                <div className="flex items-center justify-center lg:ml-[40rem] mt-20 cursor-pointer">
                <div className="rounded-[100px] h-[10rem] w-[10rem] border border-gray-500 text-white flex items-center justify-center">
-                            <a href="https://www.linkedin.com/in/divinemercy-james-1244a2239" target="_blank" rel="noopener noreferrer">
-                                <i className="fa-brands fa-linkedin-in" style={{ color: "#fff" }}></i>
-                            </a>
+                          <p className="text-2xl">  &#8595;</p>
                     </div>
                </div>
 
@@ -107,13 +105,67 @@ const HeroPage: React.FC = () => {
                 </div>
 
                 {/* Updated navigation div */}
-                <div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-5">
+                {/* <div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-5">
                     <button className=" hover:text-yellow-600 text-[2rem] cursor-pointer" onClick={() => scrollToSection(section1Ref)}> {"\u2302"}</button>
                     <button className=" hover:text-yellow-600 text-[20px] cursor-pointer"  onClick={() => scrollToSection(section2Ref)}><i className="fa-regular fa-user"></i></button>
                     <button className=" hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section3Ref)}><i className="fa fa-briefcase"></i></button>
                     <button className=" hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section4Ref)}><i className="fa fa-file"></i></button>
                     <button className=" hover:text-yellow-600 text-[20px] cursor-pointer"  onClick={() => scrollToSection(section5Ref)}><i className="fa-solid fa-circle-dot"></i></button>
-                </div>
+                </div> */}
+
+{/* Updated navigation div with square tooltips and thinking shape (triangle on the right) */}
+<div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-5">
+    <div className="relative group">
+        <button className="hover:text-yellow-600 text-[2rem] cursor-pointer" onClick={() => scrollToSection(section1Ref)}>
+            {"\u2302"}
+        </button>
+        <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
+         Home
+         <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+       </span>
+
+    </div>
+    <div className="relative group">
+        <button className="hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section2Ref)}>
+            <i className="fa-regular fa-user"></i>
+        </button>
+        <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
+         About
+         <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+       </span>
+    </div>
+    <div className="relative group">
+        <button className="hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section3Ref)}>
+            <i className="fa fa-briefcase"></i>
+        </button>
+        <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
+        Skills
+         <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+       </span>
+    </div>
+    <div className="relative group">
+        <button className="hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section4Ref)}>
+            <i className="fa fa-file"></i>
+        </button>
+        <span className="absolute right-[30px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[7rem] h-[30px]">
+         Qualification
+         <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+       </span>
+    </div>
+    <div className="relative group">
+        <button className="hover:text-yellow-600 text-[20px] cursor-pointer" onClick={() => scrollToSection(section5Ref)}>
+            <i className="fa-solid fa-circle-dot"></i>
+        </button>
+        <span className="absolute right-[32px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[6rem] h-[30px]">
+         Portfolio
+         <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+       </span>
+    </div>
+</div>
+
+
+
+
             </div>
 
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-[gray-900] z-10"></div>
