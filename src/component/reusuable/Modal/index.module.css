@@ -1,0 +1,30 @@
+@keyframes sketch {
+    0% {
+      transform: scale(0.95) rotate(-2deg) translate(-2px, -2px);
+      opacity: 0;
+    }
+    20% {
+      transform: scale(1.02) rotate(2deg) translate(3px, 3px);
+    }
+    40% {
+      transform: scale(0.98) rotate(-1deg) translate(-3px, 1px);
+    }
+    60% {
+      transform: scale(1.01) rotate(1deg) translate(2px, -1px);
+    }
+    80% {
+      transform: scale(1.00) rotate(-0.5deg) translate(-1px, 2px);
+    }
+    100% {
+      transform: scale(1) rotate(0) translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .animateSketch {
+    animation: sketch 0.7s ease-in-out;
+  }
+  
+
+ 
+  

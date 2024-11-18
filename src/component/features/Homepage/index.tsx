@@ -14,17 +14,17 @@ const Homepage: React.FC = () => {
 
  useEffect(() => {
   document.body.style.overflow = 'hidden';
-  console.log('Animation started, overflow set to hidden');
+
   const animationDuration = 3000;
   const timer = setTimeout(() => {
     setIsAnimationComplete(true);
     document.body.style.overflow = 'auto'; 
-    console.log('Animation complete, overflow set to auto');
+  
   }, animationDuration);
 
   return () => {
     clearTimeout(timer);
-    console.log('Cleanup function triggered');
+    
   };
 }, [location]);
 

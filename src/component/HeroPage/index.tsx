@@ -1,10 +1,11 @@
-import React, { useRef} from "react";
+import React, { useRef, useState} from "react";
 import pix from "../../asset/hero-section/my-pic (1)-squared.png"
 import pix2 from "../../asset/hero-section/my-pic (1)-squared-photoaidcom-greyscale.png"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import FilledButton from "../reusuable/FilledButton";
 import { Link } from "react-router-dom";
 import logo from "../../asset/hero-section/mylogo (1).png";
+import Modal from "../reusuable/Modal";
 
 
 const HeroPage: React.FC = () => {
@@ -14,6 +15,11 @@ const HeroPage: React.FC = () => {
     const section3Ref = useRef<HTMLDivElement>(null);
     const section4Ref = useRef<HTMLDivElement>(null);
     const section5Ref = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleModalToggle = () =>{
+        setIsVisible(!isVisible);
+    }
 
   
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
@@ -66,7 +72,17 @@ const HeroPage: React.FC = () => {
                 </div>
                     
                     <div className="flex items-center justify-center mt-16">
-                        <FilledButton text="Contact Me" />
+                        <div onClick={handleModalToggle}>
+                        <FilledButton text="Contact Me"/>
+                        </div>
+
+                        {/* Modal */}
+      {isVisible && (
+        <Modal isVisible={isVisible} onClose={handleModalToggle}/>
+          
+       
+      )}
+                        
                     </div>
 
 
