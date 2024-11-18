@@ -1,5 +1,5 @@
 import HeroPage from "../component/HeroPage";
-import Homepage from "../component/Homepage";
+import Homepage from "../component/features/Homepage";
 import Page from "../component/About";
 
 export const Routes = [

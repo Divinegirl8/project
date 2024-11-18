@@ -85,3 +85,36 @@ body {
     font-size:24px;
   }
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px); /* Start below the final position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  animation: bounceUp 1s ease-out forwards; /* Apply bounce animation */
+}
+
+/* Keyframes for the bounce-up effect */
+@keyframes bounceUp {
+  0% {
+    transform: translateY(30px); /* Start below */
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px); /* Move above the final position (bounce effect) */
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1;
+  }
+}
+
+.bounceUp {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
