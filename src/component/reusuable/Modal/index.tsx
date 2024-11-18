@@ -5,6 +5,7 @@ import whatsapp from "../../../asset/contact/whatsappLogo-removebg-preview.png"
 import resume from "../../../asset/contact/resume-logo-removebg-preview.png"
 
 
+
 interface ModalProps {
   isVisible: boolean;
   onClose: () => void;
@@ -25,6 +26,10 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
     const gmailLink = `mailto:divinemercy601@gmail.com`;
     window.location.href = gmailLink
   }
+
+
+  const myResume = process.env.PUBLIC_URL + '/Resume.pdf';
+
 
 
   const handleDownloadResume = () => {
@@ -73,7 +78,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
                 </div>
 
                 <div>
-                <a href="src/asset/pdf/My_Resume (1).pdf" download="James_DivineMercy_Resume.pdf" className="hidden" id="myLink">
+                <a href={myResume} download="James_DivineMercy_Resume.pdf" className="hidden" id="myLink">
                 </a>
                     <img 
                     src={resume}  

@@ -4,6 +4,7 @@ import style from "./index.module.css";
 const About: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const aboutMe = process.env.PUBLIC_URL + '/song.mp3';
 
   const togglePlayPause = () => {
     if (audioRef.current) {
@@ -16,7 +17,6 @@ const About: React.FC = () => {
     }
   };
 
-  // Observer to trigger animations when the element is in view
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const About: React.FC = () => {
                 >
                   {isPlaying ? <span>❚❚</span> : <span>▶️</span>}
                 </button>
-                <audio ref={audioRef} src={"/Users/apple/my-portfolio/src/asset/audio/song.mp3"} />
+                <audio ref={audioRef} src={aboutMe} />
               </div>
 
               <p
