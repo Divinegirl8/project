@@ -1,4 +1,36 @@
 import React from "react";
+import java from "../../asset/skills/java-removebg-preview.png"
+import react from "../../asset/skills/react-removebg-preview.png"
+import js from "../../asset/skills/javascript-removebg-preview.png"
+import vue from "../../asset/skills/vuejs-removebg-preview.png"
+import bootstrap from "../../asset/skills/bootsrap-removebg-preview.png"
+import apollo from "../../asset/skills/apollo-removebg-preview.png"
+import nodejs from "../../asset/skills/node-removebg-preview.png"
+import redux from "../../asset/skills/redux-removebg-preview.png"
+import css from "../../asset/skills/css-removebg-preview.png"
+import html from "../../asset/skills/html-removebg-preview.png"
+import tsx from "../../asset/skills/ts-removebg-preview.png"
+import render from "../../asset/skills/render-removebg-preview.png"
+import pytest from "../../asset/skills/pytest-removebg-preview.png"
+import junit from "../../asset/skills/junit-removebg-preview.png"
+import materialUi from "../../asset/skills/materialUi-removebg-preview.png"
+import docker from "../../asset/skills/docker-removebg-preview (1).png"
+import git from "../../asset/skills/git-removebg-preview.png"
+import figma from "../../asset/skills/fig-removebg-preview.png"
+import jbpm from "../../asset/skills/jbpm-removebg-preview.png"
+import python from "../../asset/skills/python-removebg-preview.png"
+import next from "../../asset/skills/next-removebg-preview.png"
+import reactNative from "../../asset/skills/reactnative-inner.svg"
+import springBoot from "../../asset/skills/springboot-removebg-preview.png"
+import tailwindcss from "../../asset/skills/tailwindcss-removebg-preview.png"
+import mongodb from "../../asset/skills/mongodbpix-removebg-preview.png"
+import pg from "../../asset/skills/postgres-removebg-preview.png"
+import mysql from "../../asset/skills/mysql-removebg-preview.png"
+import postman from "../../asset/skills/postman-removebg-preview.png"
+import linux from "../../asset/skills/linux-removebg-preview.png"
+import macos from "../../asset/skills/ios-removebg-preview.png"
+import windows from "../../asset/skills/windows-removebg-preview.png"
+import go from "../../asset/skills/go-tutorial-removebg-preview.png"
 
 const Skills:React.FC = () =>{
     return(
@@ -14,6 +46,112 @@ const Skills:React.FC = () =>{
                 <p className="font-normal text-white font-fontInter uppercase text-[13px]">Skills</p>
               </div>
             </div>
+
+
+            <h1 className="text-white ml-[30rem] text-[30px] mt-10">Technologies I Use</h1>
+
+            <div className="ml-[30rem] mt-10 w-[50%] h-auto bg-white rounded-[10px] p-4">
+                <div className="grid grid-cols-2 lg:grid-cols-8 gap-5 sm:grid-cols-2 md:grid-cols-3">
+                  <div className="flex justify-center items-center">
+                    <img src={java} className="w-20 h-20" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={react} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={js} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={vue} className="w-16 " />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={bootstrap} className="w-14 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={apollo} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={nodejs} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={redux} className="w-16 h-16" />
+                  </div>
+                   <div className="flex justify-center items-center">
+                    <img src={css} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={html} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={tsx} className="w-20 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={junit} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={render} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={pytest} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={materialUi} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={docker} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={git} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={figma} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={jbpm} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={python} className="w-20 h-20" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={next} className="w-14 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={reactNative} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={springBoot} className="w-20 h-20" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={tailwindcss} className="w-20 h-20" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={mongodb} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={pg} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={mysql} className="w-16 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={postman} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={linux} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={macos} className="w-16 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={windows} className="w-16 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={go} className="w-24 h-24" />
+                  </div>
+
+                </div>
+              </div>
+
         </div>
      
     )
