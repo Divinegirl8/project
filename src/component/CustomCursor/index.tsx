@@ -1,42 +1,4 @@
-// import React, { useEffect, useState } from "react";
-// import style from "./index.module.css"
 
-// const CustomCursor: React.FC = () => {
-//     const [position, setPosition] = useState({ x: 0, y: 0 });
-//     const [isVisible, setIsVisible] = useState(false);
-
-//     useEffect(() => {
-//         const handleMouseMove = (e: MouseEvent) => {
-//             setPosition({ x: e.clientX, y: e.clientY });
-//             setIsVisible(true);
-//         };
-
-//         const handleMouseLeave = () => {
-//             setIsVisible(false);
-//         };
-
-//         document.addEventListener("mousemove", handleMouseMove);
-//         document.addEventListener("mouseleave", handleMouseLeave);
-
-//         return () => {
-//             document.removeEventListener("mousemove", handleMouseMove);
-//             document.removeEventListener("mouseleave", handleMouseLeave);
-//         };
-//     }, []);
-
-//     return (
-//         <>
-//             {isVisible && (
-//                 <div
-//                     className={style.customCursor}
-//                     style={{ left: `${position.x}px`, top: `${position.y}px` , display:"none"}}
-//                 />
-//             )}
-//         </>
-//     );
-// };
-
-// export default CustomCursor;
 
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
@@ -61,7 +23,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
 
             const newTimer = setTimeout(() => {
                 setIsVisible(false);
-            }, 1200); // Adjust delay as needed
+            }, 1200); 
 
             setTimer(newTimer);
         };
@@ -77,7 +39,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
         if (isShown) {
             document.body.style.cursor = 'none';
         } else {
-            document.body.style.cursor = 'default';
+            document.body.style.cursor = 'none';
         }
 
         return () => {
@@ -98,8 +60,11 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
             {isVisible && (
                 <div
                     className={cursorClass}
-                    style={{ left: `${position.x}px`, top: `${position.y}px` }}
-                />
+                    style={{ left: `${position.x}px`, top: `${position.y}px`, display : "flex", justifyItems : "center", alignItems: "center" }}
+                >
+                   <div className="bg-yellow-600 h-2 w-2 rounded-[50%] ml-5">
+                    </div>    
+                 </div>
             )}
         </>
     );

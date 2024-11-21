@@ -31,6 +31,11 @@ import linux from "../../asset/skills/linux-removebg-preview.png"
 import macos from "../../asset/skills/ios-removebg-preview.png"
 import windows from "../../asset/skills/windows-removebg-preview.png"
 import go from "../../asset/skills/go-tutorial-removebg-preview.png"
+import keycloak from "../../asset/skills/Keycloak_Logo-removebg-preview.png"
+import swagger from "../../asset/skills/swagger-removebg-preview.png"
+import mockito from "../../asset/skills/mockito-removebg-preview.png"
+import flutter from "../../asset/skills/flutter-removebg-preview.png"
+
 
 const Skills:React.FC = () =>{
     return(
@@ -51,7 +56,7 @@ const Skills:React.FC = () =>{
             <h1 className="text-white ml-[30rem] text-[30px] mt-10">Technologies I Use</h1>
 
             <div className="ml-[30rem] mt-10 w-[50%] h-auto bg-white rounded-[10px] p-4">
-                <div className="grid grid-cols-2 lg:grid-cols-8 gap-5 sm:grid-cols-2 md:grid-cols-3">
+                <div className="grid grid-cols-2 lg:grid-cols-9 gap-5 sm:grid-cols-2 md:grid-cols-3">
                   <div className="flex justify-center items-center">
                     <img src={java} className="w-20 h-20" />
                   </div>
@@ -146,7 +151,19 @@ const Skills:React.FC = () =>{
                     <img src={windows} className="w-16 h-14" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={go} className="w-20 h-20" />
+                    <img src={go} className="w-[85px] h-20" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={keycloak} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={swagger} className="w-16 h-16" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={mockito} className="w-16 h-14" />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img src={flutter} className="w-16 h-14" />
                   </div>
 
                 </div>

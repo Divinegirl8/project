@@ -406,7 +406,7 @@ const HeroPage: React.FC = () => {
             <div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-10">
                 <div className="relative group">
                     <button className="hover:text-yellow-600  cursor-pointer" onClick={() => scrollToSection(section1Ref)}>
-                    <i className="fa-solid fa-house" style={{color: "#fff"}}></i>
+                    <i className="fa-solid fa-house" style={{color: "#ca8a04"}}></i>
                     </button>
                     <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
                     Home

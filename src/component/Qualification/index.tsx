@@ -2,7 +2,7 @@ import React from "react";
 
 const Qualification:React.FC = () =>{
     return(
-        <div className='bg-[#000] w-full h-full'>
+        <div className='bg-[#000] w-full h-[full]'>
 
         <div className="flex ml-[30rem] pt-[10rem]">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
