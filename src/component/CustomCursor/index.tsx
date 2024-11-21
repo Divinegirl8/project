@@ -70,11 +70,10 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
             setIsVisible(false);
         };
 
-        // Add event listeners for mouse move and leave
+      
         document.addEventListener("mousemove", handleMouseMove);
         document.addEventListener("mouseleave", handleMouseLeave);
 
-        // Hide the default cursor when the custom cursor is active
         if (isShown) {
             document.body.style.cursor = 'none';
         } else {
@@ -87,7 +86,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
             if (timer) {
                 clearTimeout(timer);
             }
-            // Reset the cursor when the component unmounts or `isShown` changes
+            
             document.body.style.cursor = 'default';
         };
     }, [timer, isShown]);

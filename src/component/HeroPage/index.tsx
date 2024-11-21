@@ -277,9 +277,9 @@ const HeroPage: React.FC = () => {
                     <h1 className="text-white text-[20px] text-center mt-10">divinemercy601@gmail.com</h1>
                     <p className="text-yellow-600 text-center text-[12px]">© 2024 DivineMercy. All Rights Reserved</p>
                     
-                    <div className="flex flex-row gap-5  items-center justify-center mt-10 cursor-pointer">
+                    <div className="flex flex-row gap-5  items-center justify-center mt-10">
 
-                    <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center">
+                    <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center  cursor-pointer">
                             <a href="https://www.linkedin.com/in/divinemercy-james-1244a2239" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-linkedin-in" style={{ color: "#fff" }}></i>
                             </a>
@@ -287,7 +287,7 @@ const HeroPage: React.FC = () => {
 
 
 
-                        <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center">
+                        <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center cursor-pointer">
                             <a href="https://github.com/Divinegirl8" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-github" style={{ color: "#fff" }}></i>
                                
@@ -295,7 +295,7 @@ const HeroPage: React.FC = () => {
                         </div>
 
 
-                        <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center">
+                        <div className="rounded-[50px] h-10 w-10 border-2 border-gray-500 hover:border-yellow-600 text-white flex items-center justify-center  cursor-pointer">
                             <a href="https://www.instagram.com/divinemercy10_07/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-instagram" style={{ color: "#fff" }}></i>
                                
