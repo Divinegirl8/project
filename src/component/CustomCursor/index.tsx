@@ -38,13 +38,11 @@
 
 // export default CustomCursor;
 
-
-
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
 
 interface CustomCursorProps {
-    isShown: boolean;  // Adjusted to be a boolean
+    isShown: boolean;
 }
 
 const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
@@ -57,7 +55,6 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
             setPosition({ x: e.clientX, y: e.clientY });
             setIsVisible(true);
 
-            // Reset the timer whenever the mouse moves
             if (timer) {
                 clearTimeout(timer);
             }
@@ -77,14 +74,23 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ isShown }) => {
         document.addEventListener("mousemove", handleMouseMove);
         document.addEventListener("mouseleave", handleMouseLeave);
 
+        // Hide the default cursor when the custom cursor is active
+        if (isShown) {
+            document.body.style.cursor = 'none';
+        } else {
+            document.body.style.cursor = 'default';
+        }
+
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
             document.removeEventListener("mouseleave", handleMouseLeave);
             if (timer) {
                 clearTimeout(timer);
             }
+            // Reset the cursor when the component unmounts or `isShown` changes
+            document.body.style.cursor = 'default';
         };
-    }, [timer]);
+    }, [timer, isShown]);
 
     const cursorClass = isShown ? style.customCursor : style.hiddenCursor;
 
