@@ -7,6 +7,7 @@ import About from '../../About';
 import Skills from '../../Skills';
 import Qualification from '../../Qualification';
 import Portfolio from '../../Portfolio';
+import CustomCursor from '../../CustomCursor';
 
 const Homepage: React.FC = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -30,19 +31,21 @@ const Homepage: React.FC = () => {
 
 
   return (
+    <>
+    
 <div
   className={`${
     !isAnimationComplete ? 'overflow-hidden' : 'overflow-auto'
-  } h-screen bg-black relative`}
+  } h-screen bg-black relative cursor-none`}
 >
       {!isAnimationComplete && <div className={`${style.shakingLine}`}></div>}
 
-   
+      
       <div
         className={`${style.pageContent} absolute inset-0 ${
           isAnimationComplete ? style.visible : ''
         }`}
-      >
+      > <CustomCursor isShown={true}/>
         <HeroPage />
         <About />
         <Skills />
@@ -50,6 +53,7 @@ const Homepage: React.FC = () => {
         <Portfolio />
       </div>
     </div>
+    </>
   );
 };
 

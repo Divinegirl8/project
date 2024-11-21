@@ -6,6 +6,7 @@ import resume from "../../../asset/contact/resume-logo-removebg-preview.png"
 
 
 
+
 interface ModalProps {
   isVisible: boolean;
   onClose: () => void;
@@ -43,7 +44,8 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
   
   
 
-  return (
+  return (<>
+   
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
       <div
         className={`relative w-[90%] max-w-lg mx-auto ${style.animateSketch}`}
@@ -100,7 +102,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

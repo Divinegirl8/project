@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import style from "./index.module.css";
 
+
 const About: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -47,6 +48,7 @@ const About: React.FC = () => {
 
   return (
     <>
+   
       <div className={style.header}>
         <div>
           <div
@@ -74,7 +76,7 @@ const About: React.FC = () => {
                   onClick={togglePlayPause}
                   className="px-4 py-2 text-white rounded-full"
                 >
-                  {isPlaying ? <span>❚❚</span> : <span>▶️</span>}
+                  {isPlaying ? <span>❚❚</span> : <span>&#9654;</span>}
                 </button>
                 <audio ref={audioRef} src={aboutMe} />
               </div>

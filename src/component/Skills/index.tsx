@@ -74,7 +74,7 @@ const Skills:React.FC = () =>{
                     <img src={nodejs} className="w-16 h-16" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={redux} className="w-16 h-16" />
+                    <img src={redux} className="w-14 h-14" />
                   </div>
                    <div className="flex justify-center items-center">
                     <img src={css} className="w-16 h-16" />
@@ -146,7 +146,7 @@ const Skills:React.FC = () =>{
                     <img src={windows} className="w-16 h-14" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={go} className="w-24 h-24" />
+                    <img src={go} className="w-20 h-20" />
                   </div>
 
                 </div>
