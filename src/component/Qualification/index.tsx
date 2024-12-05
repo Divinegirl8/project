@@ -23,7 +23,7 @@ const Qualification:React.FC = () =>{
 
         <div className="text-white ml-[30rem]">
 
-        <h1 className=" mt-10 text-[50px]">Education & <span className="text-yellow-600">Experience</span> </h1>
+        <h1 className=" mt-10 text-[50px]"><span className="text-yellow-600">Experience </span>& Education </h1>
            {/* first container */}
          <div>
        
@@ -56,8 +56,40 @@ const Qualification:React.FC = () =>{
            </div>
 
 
-              {/* second container */}
-            <div>
+
+                {/* second container */}
+                <div>
+            <div className="flex flex-row gap-7 ">
+              <div>
+                  <div className="w-3 h-3 rounded-[50px] bg-[#999999]">
+
+                  </div>
+                
+
+                  <div className="w-[1px] h-[15rem] ml-[5px] rounded-[50px] bg-[#999999]">
+
+                  </div>
+              </div>
+
+              <div>
+                <h4 className="hover:text-yellow-600 mt-[-7px] text-[#999999]">2022</h4>
+                <div className="mt-7">
+               <h1 className="text-white text-[30px] font-thin">Frontend Engineering</h1>
+               <h1 className="text-[#999999] text-[15px] font-semibold">Grapple Space</h1>
+               </div>
+              </div>
+             
+
+            </div>
+            
+
+           </div>
+
+
+
+
+              {/* third container */}
+              <div>
             <div className="flex flex-row gap-7 ">
               <div>
                   <div className="w-3 h-3 rounded-[50px] bg-[#999999]">
@@ -83,7 +115,6 @@ const Qualification:React.FC = () =>{
             
 
            </div>
-
            </div>
 
         
