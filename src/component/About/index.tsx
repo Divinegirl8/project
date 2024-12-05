@@ -5,7 +5,7 @@ import style from "./index.module.css";
 const About: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const aboutMe = process.env.PUBLIC_URL + '/song2.m4a';
+  const aboutMe = process.env.PUBLIC_URL + '/song.mp4';
 
   const togglePlayPause = () => {
     if (audioRef.current) {
