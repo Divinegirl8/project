@@ -76,6 +76,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
                     src={gmail} 
                     className="w-28 h-28 transform hover:scale-110 transition-all duration-300 cursor-pointer"
                     onClick={handleGotoGmail}
+                    title="gmail"
                     />
                 </div>
 
@@ -86,6 +87,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
                     src={resume}  
                     className="w-28 h-28 transform hover:scale-110 transition-all duration-300 cursor-pointer"
                     onClick={handleDownloadResume}
+                    title="resume"
                     />
                 </div>
                 
@@ -94,6 +96,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
                     src={whatsapp}  
                     className="w-20 h-20 mt-4 transform hover:scale-110 transition-all duration-300 cursor-pointer"
                     onClick={handleGotoWhatsapp}
+                    title="whatsapp"
                     />
                 </div>
            </div>
