@@ -16,43 +16,59 @@ const Portfolio:React.FC = () =>{
             </div>
 
 
-            <div className="relative group ml-[30rem] mt-10">
-                    {/* Image */}
-                    <img
-                      src={passGen}
-                      className="w-[50rem] h-[30rem] object-cover transition-opacity duration-300 group-hover:opacity-75"
-                    />
+            <h1 className=" mt-10 text-[50px] text-white ml-[30rem]">Projects </h1>
 
-                     {/* Skills */}
-                     <div className="top-[27rem] ml-10 absolute inset-0">
-                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
-                          Java
-                        </span>
-                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
-                          TypeScript
-                        </span>
-                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
-                          Render
-                        </span>
-                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
-                          React
-                        </span>
-                      </div>
+            <div className="ml-[30rem] mt-10">
+                  <div className="relative group ">
+                          {/* Image */}
+                          <img
+                            src={passGen}
+                            className="w-[50rem] h-[30rem] object-cover transition-opacity duration-300 group-hover:opacity-75"
+                          />
+
+                          {/* Skills */}
+                          <div className="top-[27rem] ml-10 absolute inset-0">
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Java
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                TypeScript
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Render
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                React
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Vercel
+                              </span>
+                            </div>
 
 
-                    <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
-                     
-                      {/* Buttons */}
-                      <div>
-                        <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
-                          <a href="https://password-generator-react-pi-ruddy.vercel.app/" target="_blank">go to website</a>
-                        </button>
-                        <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
-                          <a href="https://password-generator-java.onrender.com/documentation/password-generator/swagger-ui/index.html#/" target="_blank">go to endpoint</a>
-                        </button>
-                      </div>
-                    </div>
+                          <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
+                          
+                            {/* Buttons */}
+                            <div>
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://password-generator-react-pi-ruddy.vercel.app/" target="_blank">go to website</a>
+                              </button>
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://password-generator-java.onrender.com/documentation/password-generator/swagger-ui/index.html#/" target="_blank">go to endpoint</a>
+                              </button>
+                            </div>
+
+                          </div>
+
+
+                          
                   </div>
+
+
+                  
+            </div>
+
+            
 
 
         </div>
