@@ -29,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
   }
 
 
-  const myResume = process.env.PUBLIC_URL + '/Divinmercy-James-Resume.pdf';
+  const myResume = process.env.PUBLIC_URL + '/DivinmercyJamesResume.pdf';
 
 
 
