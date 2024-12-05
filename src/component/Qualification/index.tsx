@@ -12,7 +12,17 @@ const Qualification:React.FC = () =>{
                 ></i>
                 <p className="font-normal text-white font-fontInter uppercase text-[13px]">Qualification</p>
               </div>
-            </div>
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <h1>Education & Experience</h1>
+
         </div>
      
     )
