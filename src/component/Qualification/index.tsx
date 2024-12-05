@@ -21,8 +21,73 @@ const Qualification:React.FC = () =>{
 
         </div>
 
-        <h1>Education & Experience</h1>
+        <div className="text-white ml-[30rem]">
 
+        <h1 className=" mt-10 text-[50px]">Education & <span className="text-yellow-600">Experience</span> </h1>
+           {/* first container */}
+         <div>
+       
+         
+
+              <div className="flex flex-row gap-7 mt-10">
+              <div>
+                  <div className="w-3 h-3 mt-[6px] rounded-[50px] bg-[#999999]">
+
+                  </div>
+                
+
+                  <div className="w-[1px] h-[15rem]  ml-[5px] rounded-[50px] bg-[#999999]">
+
+                  </div>
+              </div>
+
+              <div>
+                <h4 className="hover:text-yellow-600 text-[#999999]">05/2024 – present</h4>
+               <div className="mt-7">
+               <h1 className="text-white text-[30px] font-thin">Software Engineer</h1>
+               <h1 className="text-[#999999] text-[15px] font-semibold">Semicolon Africa</h1>
+               </div>
+              </div>
+             
+
+            </div>
+            
+
+           </div>
+
+
+              {/* second container */}
+            <div>
+            <div className="flex flex-row gap-7 ">
+              <div>
+                  <div className="w-3 h-3 rounded-[50px] bg-[#999999]">
+
+                  </div>
+                
+
+                  <div className="w-[1px] h-[15rem] ml-[5px] rounded-[50px] bg-[#999999]">
+
+                  </div>
+              </div>
+
+              <div>
+                <h4 className="hover:text-yellow-600 mt-[-7px] text-[#999999]">2023– 2024</h4>
+                <div className="mt-7">
+               <h1 className="text-white text-[30px] font-thin">Software Engineering</h1>
+               <h1 className="text-[#999999] text-[15px] font-semibold">Semicolon Africa</h1>
+               </div>
+              </div>
+             
+
+            </div>
+            
+
+           </div>
+
+           </div>
+
+        
+        
         </div>
      
     )

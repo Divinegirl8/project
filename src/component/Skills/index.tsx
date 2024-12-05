@@ -53,7 +53,7 @@ const Skills:React.FC = () =>{
             </div>
 
 
-            <h1 className="text-white ml-[30rem] text-[30px] mt-10">Technologies I Use</h1>
+            <h1 className="text-white ml-[30rem] text-[50px] mt-10">Technologies I Use</h1>
 
             <div className="ml-[30rem] mt-10 w-[50%] h-auto bg-white rounded-[10px] p-4">
                 <div className="grid grid-cols-2 lg:grid-cols-9 gap-5 sm:grid-cols-2 md:grid-cols-3">
