@@ -66,7 +66,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-[-23rem]">
+          <div className="mt-[-20rem] mb-20 ">
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
@@ -85,11 +85,14 @@ const About: React.FC = () => {
                 ref={(el) => (elementsRef.current[2] = el)}
                 className={`${style.hidden} text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:ml-[30rem] text-[#999999]`}
               >
-                I'm a dedicated Software Engineer with a passion for crafting reliable, efficient, and scalable software solutions. Skilled in modern development practices, I enjoy working with a range of technologies, including Java, JavaScript, Python, Node.js, and frameworks like React, Next.js, and Vue.js.
-
-                Driven by a love for coding and continuous learning, I take pride in writing clean, maintainable code that not only functions flawlessly but also enhances the overall performance of applications. My journey has been fueled by a desire to solve real-world problems, with a track record of successfully delivering projects across diverse industries.
-
-                With a strong foundation in backend development, database management, and cloud services, I enjoy diving into complex challenges and collaborating with cross-functional teams to bring ideas to life. I’m constantly pushing my own boundaries to stay on top of emerging tech trends and am committed to building impactful digital solutions.
+               
+               I'm a dedicated Software Engineer with expertise in crafting scalable, 
+               efficient, and reliable software solutions using technologies like Java, JavaScript, 
+               Python, Node.js, React, Next.js, and Vue.js. Passionate about clean, maintainable code, 
+               I focus on solving real-world problems and delivering impactful projects across diverse industries. 
+               With a strong foundation in backend development, databases, and cloud services, 
+               I thrive on tackling challenges and collaborating with teams to create innovative digital 
+               solutions while staying ahead of tech trends.
               </p>
             </div>
           </div>

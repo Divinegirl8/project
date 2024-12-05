@@ -58,112 +58,112 @@ const Skills:React.FC = () =>{
             <div className="ml-[30rem] mt-10 w-[50%] h-auto bg-white rounded-[10px] p-4">
                 <div className="grid grid-cols-2 lg:grid-cols-9 gap-5 sm:grid-cols-2 md:grid-cols-3">
                   <div className="flex justify-center items-center">
-                    <img src={java} className="w-20 h-20" />
+                    <img src={java} className="w-20 h-20" title="java" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={react} className="w-16 h-16" />
+                    <img src={react} className="w-16 h-16" title="react js" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={js} className="w-16 h-16" />
+                    <img src={js} className="w-16 h-16" title="javascript"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={vue} className="w-16 " />
+                    <img src={vue} className="w-16 " title="vue js"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={bootstrap} className="w-14 h-14" />
+                    <img src={bootstrap} className="w-14 h-14" title="bootstrap"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={apollo} className="w-16 h-16" />
+                    <img src={apollo} className="w-16 h-16" title="apollo"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={nodejs} className="w-16 h-16" />
+                    <img src={nodejs} className="w-16 h-16" title="node js"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={redux} className="w-14 h-14" />
+                    <img src={redux} className="w-14 h-14" title="redux"/>
                   </div>
                    <div className="flex justify-center items-center">
-                    <img src={css} className="w-16 h-16" />
+                    <img src={css} className="w-16 h-16" title="css"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={html} className="w-16 h-16" />
+                    <img src={html} className="w-16 h-16" title="html"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={tsx} className="w-20 h-16" />
+                    <img src={tsx} className="w-20 h-16" title="typescript"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={junit} className="w-16 h-16" />
+                    <img src={junit} className="w-16 h-16" title="junit"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={render} className="w-16 h-16" />
+                    <img src={render} className="w-16 h-16" title="render"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={pytest} className="w-16 h-16" />
+                    <img src={pytest} className="w-16 h-16" title="pytest"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={materialUi} className="w-16 h-16" />
+                    <img src={materialUi} className="w-16 h-16" title="material ui"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={docker} className="w-16 h-16" />
+                    <img src={docker} className="w-16 h-16" title="docker"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={git} className="w-16 h-16" />
+                    <img src={git} className="w-16 h-16" title="git"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={figma} className="w-16 h-16" />
+                    <img src={figma} className="w-16 h-16" title="figma"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={jbpm} className="w-16 h-16" />
+                    <img src={jbpm} className="w-16 h-16" title="jbpm"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={python} className="w-20 h-20" />
+                    <img src={python} className="w-20 h-20" title="python"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={next} className="w-14 h-14" />
+                    <img src={next} className="w-14 h-14" title="next js"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={reactNative} className="w-16 h-16" />
+                    <img src={reactNative} className="w-16 h-16" title="react native" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={springBoot} className="w-20 h-20" />
+                    <img src={springBoot} className="w-20 h-20" title="spring boot"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={tailwindcss} className="w-20 h-20" />
+                    <img src={tailwindcss} className="w-20 h-20" title="tailwindcss" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={mongodb} className="w-16 h-16" />
+                    <img src={mongodb} className="w-16 h-16" title="mongodb"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={pg} className="w-16 h-16" />
+                    <img src={pg} className="w-16 h-16" title="postgres"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={mysql} className="w-16 h-14" />
+                    <img src={mysql} className="w-16 h-14" title="mysql"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={postman} className="w-16 h-16" />
+                    <img src={postman} className="w-16 h-16" title="postman"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={linux} className="w-16 h-16" />
+                    <img src={linux} className="w-16 h-16" title="linux"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={macos} className="w-16 h-14" />
+                    <img src={macos} className="w-16 h-14" title="macOs"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={windows} className="w-16 h-14" />
+                    <img src={windows} className="w-16 h-14" title="windows"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={go} className="w-[85px] h-20" />
+                    <img src={go} className="w-[85px] h-20" title="go"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={keycloak} className="w-16 h-16" />
+                    <img src={keycloak} className="w-16 h-16" title="keycloak" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={swagger} className="w-16 h-16" />
+                    <img src={swagger} className="w-16 h-16" title="swagger" />
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={mockito} className="w-16 h-14" />
+                    <img src={mockito} className="w-16 h-14" title="mockito"/>
                   </div>
                   <div className="flex justify-center items-center">
-                    <img src={flutter} className="w-16 h-14" />
+                    <img src={flutter} className="w-16 h-14" title="flutter" />
                   </div>
 
                 </div>
