@@ -2,7 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 
-const Qualification: React.FC = () => {
+const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   const [ref1, inView1] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
 
@@ -20,7 +20,7 @@ const Qualification: React.FC = () => {
   });
 
   return (
-    <div className="bg-[#000] w-full h-[full]">
+    <div className="bg-[#000] w-full h-[full]" ref={ref}>
       <div className="flex ml-[30rem] pt-[10rem]">
         <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
           <i className="fa-solid fa-file" style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}></i>
@@ -89,6 +89,6 @@ const Qualification: React.FC = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Qualification;

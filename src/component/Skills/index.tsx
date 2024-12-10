@@ -38,10 +38,10 @@ import flutter from "../../asset/skills/flutter-removebg-preview.png"
 import style from "./index.module.css"
 
 
-const Skills:React.FC = () =>{
+const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
     return(
       
-        <div className='bg-[#343434] w-full h-full'>
+        <div className='bg-[#343434] w-full h-full'ref={ref} >
 
         <div className="flex ml-[30rem] pt-[10rem]">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
@@ -174,6 +174,6 @@ const Skills:React.FC = () =>{
      
     )
 
-}
+});
 
 export default Skills;

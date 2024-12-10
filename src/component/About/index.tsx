@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import style from "./index.module.css";
+import React from "react";
 
-
-const About: React.FC = () => {
+const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const aboutMe = process.env.PUBLIC_URL + '/song.mp4';
@@ -49,7 +49,7 @@ const About: React.FC = () => {
   return (
     <>
    
-      <div className={style.header}>
+      <div className={style.header} ref={ref}>
         <div>
           <div
             ref={(el) => (elementsRef.current[0] = el)}
@@ -131,6 +131,6 @@ const About: React.FC = () => {
       </div>
     </>
   );
-};
+});
 
 export default About;
