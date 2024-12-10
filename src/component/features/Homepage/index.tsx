@@ -122,7 +122,7 @@ const Homepage: React.FC = () => {
         </div>
 
         <HeroPage ref={HeroPageRef} />
-        <div className="mt-[-30rem]">
+        <div className="lg:mt-[-30rem] mt-[-40rem] mb-4 lg:mb-0">
           <Circle handleIconClick={() => handleIconClick("portfolio", portfolioRef)} />
         </div>
         <div ref={aboutRef}><About /></div>
