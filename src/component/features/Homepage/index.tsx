@@ -125,7 +125,8 @@ const Homepage: React.FC = () => {
           <div className={`${style.section}`}><About /></div>
           <Skills />
           <div className={`${style.section}`}><Qualification /></div>
-          <div className={`${style.section}`}><Portfolio /></div>
+          {/* <div className={`${style.section}`}><Portfolio /></div> */}
+          <div ><Portfolio /></div>
         </div>
       </div>
     </>

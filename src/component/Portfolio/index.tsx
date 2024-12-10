@@ -2,6 +2,7 @@ import React from "react";
 import passGen from "../../../src/asset/portfolio/passgen.png"
 import dashboard from "../../asset/portfolio/dashboard-user.png"
 import blog from "../../asset/portfolio/blog.png"
+import myweb from "../../asset/portfolio/my-web.png"
 
 const Portfolio:React.FC = () =>{
     return(
@@ -41,6 +42,9 @@ const Portfolio:React.FC = () =>{
                               </span>
                               <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                                 TailwindCss
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Github
                               </span>
                               <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                                 React
@@ -101,6 +105,9 @@ const Portfolio:React.FC = () =>{
                               <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                                 TailwindCss
                               </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Github
+                              </span>
                             </div>
 
 
@@ -125,9 +132,108 @@ const Portfolio:React.FC = () =>{
 
                           
             </div>
+          
+            </div>
 
 
-            
+            <div className="ml-[30rem]  mt-10">
+            <div className="relative group ">
+                          {/* Image */}
+                          <img
+                            src={myweb}
+                            className="w-[50rem] h-[30rem] object-cover transition-opacity duration-300 group-hover:opacity-75"
+                          />
+
+                          {/* Skills */}
+                          <div className="top-[27rem] ml-10 absolute inset-0">
+                               <span className="bg-white text-black px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                React
+                              </span>
+                              <span className="bg-white text-black px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                TypeScript
+                              </span>
+                              <span className="bg-white text-black px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Vercel
+                              </span>
+                              <span className="bg-white text-black px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                TailwindCss
+                              </span>
+                              <span className="bg-white text-black px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Github
+                              </span>
+                            </div>
+
+
+                          <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center  opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
+                          
+                         
+                            {/* Buttons */}
+                            {/* <div>
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://quincy-website.vercel.app/" target="_blank">go to website</a>
+                              </button>
+
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://github.com/Divinegirl8/quincy_website" target="_blank">go to github</a>
+                              </button>
+                            </div> */}
+
+                          </div>
+
+
+                          
+            </div>
+          
+            </div>
+
+
+            <div className="ml-[30rem]  mt-10 ">
+            <div className="relative group ">
+                          {/* Image */}
+                          <img
+                            src={blog}
+                            className="w-[50rem] h-[30rem] object-cover transition-opacity duration-300 group-hover:opacity-75"
+                          />
+
+                          {/* Skills */}
+                          <div className="top-[27rem] ml-10 absolute inset-0">
+                               <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                React
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                TypeScript
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Vercel
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                TailwindCss
+                              </span>
+                              <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                                Github
+                              </span>
+                            </div>
+
+
+                          <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center  opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
+                          
+                         
+                            {/* Buttons */}
+                            <div>
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://quincy-website.vercel.app/" target="_blank">go to website</a>
+                              </button>
+
+                              <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
+                                <a href="https://github.com/Divinegirl8/quincy_website" target="_blank">go to github</a>
+                              </button>
+                            </div>
+
+                          </div>
+
+
+                          
+            </div>
           
             </div>
 
