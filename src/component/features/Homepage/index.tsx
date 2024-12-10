@@ -59,7 +59,7 @@ const Homepage: React.FC = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleScrollAnimation, {
-      threshold: 0.5, // Trigger when 50% of the element is in view
+      threshold: 0.5,
     });
 
     const sections = document.querySelectorAll(`.${style.section}`);
@@ -77,6 +77,7 @@ const Homepage: React.FC = () => {
 
         <div className={`${style.pageContent} absolute inset-0 ${isAnimationComplete ? style.visible : ''}`}>
           <CustomCursor isShown={true}/>
+
 
 
           <div className="border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-10">
@@ -169,15 +170,49 @@ const Homepage: React.FC = () => {
           <div className={`${style.section}`}><About ref={aboutRef} /></div>
           <Skills ref={skillsRef}/>
           <div className={`${style.section}`}><Qualification ref={qualificationRef} /></div>
-          {/* <div className={`${style.section}`}><Portfolio /></div> */}
+       
           <Portfolio ref={portfolioRef} />
         </div>
+
+        <div className={`${style.pageContent} absolute inset-0 ${isAnimationComplete ? style.visible : ''}`}>
+        {isAnimationComplete && (
+  <div
+    className={`flex items-center justify-center lg:ml-[40rem] lg:mt-[35rem]`}
+    onClick={() => handleIconClick("portfolio", portfolioRef)}
+  >
+    <div className="rounded-[100px] h-[11rem] w-[11rem] border border-gray-500 text-white flex items-center justify-center relative cursor-pointer">
+      <svg
+        width="160"
+        height="160"
+        viewBox="0 0 160 160"
+        xmlns="http://www.w3.org/2000/svg"
+        className={`absolute ${style.animateRotate}`}
+      >
+        <defs>
+          <path
+            id="circlePath"
+            d="M80,80 m-65,0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0"
+          />
+        </defs>
+        <text fill="#999999" fontSize="19" textAnchor="middle">
+          <textPath href="#circlePath" startOffset="40%">
+            <tspan dx="40">M y </tspan> <tspan dx="10">P r o j e c t s</tspan>
+            <tspan fontSize="50" dx="10">&#x2E;</tspan>
+            <tspan dx="40">M y </tspan> <tspan dx="10">P r o j e c t s</tspan>
+            <tspan fontSize="50" dx="10">&#x2E;</tspan>
+          </textPath>
+        </text>
+      </svg>
+      <div className="absolute flex items-center justify-center">
+        <p className="text-2xl">&#8595;</p>
       </div>
+    </div>
+  </div>
+)}
+
+      </div></div>
     </>
   );
 };
 
 export default Homepage;
-
-
-

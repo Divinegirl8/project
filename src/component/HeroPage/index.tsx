@@ -101,7 +101,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 <p className="font-normal text-[68px] text-white font-fontInter">A Software Engineer</p>
 
                 </div>
-                <div className="flex items-center justify-center lg:ml-[40rem] mt-20">
+                {/* <div className="flex items-center justify-center lg:ml-[40rem] mt-20">
                 <div className="rounded-[100px] h-[11rem] w-[11rem] border border-gray-500 text-white flex items-center justify-center relative cursor-pointer">
                         <svg
                             width="160"
@@ -133,9 +133,9 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
                 </div>
 
-                </div>
+                </div> */}
 
-                <div className="text-white  lg:ml-[27rem] mt-16 flex flex-row gap-16">
+                <div className="text-white  lg:ml-[27rem] mt-16 lg:mt-[20rem] flex flex-row gap-16">
                    <div>
                    <h1 className="text-[70px] text-yellow-600">2+</h1>
                    <h4 className="flex flex-col text-[20px]">years of coding <span>experience</span> </h4> 

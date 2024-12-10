@@ -55,7 +55,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             ref={(el) => (elementsRef.current[0] = el)}
             className={`${style.innerHeader} ${style.hidden}`}
           >
-            <div className="flex ml-[30rem] pt-[10rem]">
+            <div className="flex lg:ml-[30rem] pt-[10rem]">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                 <i
                   className="fa-solid fa-user"
@@ -70,7 +70,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
-                className={`${style.hidden} text-center mt-8 lg:ml-[45rem] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto`}
+                className={`${style.hidden} lg:text-center mt-8 lg:ml-[45rem] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto`}
               >
                 <button
                   onClick={togglePlayPause}
