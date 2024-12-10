@@ -177,7 +177,7 @@ const Homepage: React.FC = () => {
         <div className={`${style.pageContent} absolute inset-0 ${isAnimationComplete ? style.visible : ''}`}>
         {isAnimationComplete && (
   <div
-    className={`flex items-center justify-center lg:ml-[40rem] lg:mt-[35rem]`}
+    className={` items-center justify-center lg:ml-[40rem] lg:mt-[35rem] hidden lg:block`}
     onClick={() => handleIconClick("portfolio", portfolioRef)}
   >
     <div className="rounded-[100px] h-[11rem] w-[11rem] border border-gray-500 text-white flex items-center justify-center relative cursor-pointer">
