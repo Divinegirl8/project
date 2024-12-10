@@ -56,8 +56,8 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
 
             <h1 className="text-white lg:ml-[30rem] text-[50px] mt-10">Technologies I Use</h1>
 
-            <div className="lg:ml-[30rem] mt-10 lg:w-[50%] h-auto bg-white rounded-[10px] p-4">
-                <div className="grid grid-cols-2 lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-3">
+            <div className="lg:ml-[30rem] mt-10 lg:w-[50%] w-[90%] mx-5 h-auto bg-white rounded-[10px] p-4">
+                <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-3">
                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
                     <img src={java} className="w-20 h-20" title="java" />
                   </div>
