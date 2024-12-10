@@ -88,7 +88,7 @@ const Homepage: React.FC = () => {
                         >
                             <a href="#home">
                         <i
-                            className={`fa-solid fa-house ${activeIcon === "home" ? "text-yellow-600" : "text-white"}`}
+                            className={`fa-solid fa-house hover:text-yellow-600  ${activeIcon === "home" ? "text-yellow-600" : "text-white"}`}
                         ></i> </a>
                         </button>
                         <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
@@ -103,7 +103,7 @@ const Homepage: React.FC = () => {
                         >
                             <a href="#about">
                         <i
-                            className={`fa-regular fa-user ${activeIcon === "about" ? "text-yellow-600" : "text-white"}`}
+                            className={`fa-regular fa-user hover:text-yellow-600 ${activeIcon === "about" ? "text-yellow-600" : "text-white"}`}
                         ></i></a>
                         </button>
                         <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
@@ -121,7 +121,7 @@ const Homepage: React.FC = () => {
 
                            
                         <i
-                            className={`fa fa-briefcase ${activeIcon === "skills" ? "text-yellow-600" : "text-white"}`}
+                            className={`fa fa-briefcase hover:text-yellow-600  ${activeIcon === "skills" ? "text-yellow-600" : "text-white"}`}
                         ></i> </a>
                         </button>
                         <span className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[4rem] h-[30px]">
@@ -138,7 +138,7 @@ const Homepage: React.FC = () => {
                         >
                             <a href="#qualification">
                         <i
-                            className={`fa fa-file ${activeIcon === "qualification" ? "text-yellow-600" : "text-white"}`}
+                            className={`fa fa-file hover:text-yellow-600  ${activeIcon === "qualification" ? "text-yellow-600" : "text-white"}`}
                         ></i></a>
                         </button>
                         <span className="absolute right-[30px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 w-[7rem] h-[30px]">
@@ -154,7 +154,7 @@ const Homepage: React.FC = () => {
                         >
                         <a href="#portfolio">
                         <i
-                            className={`fa-solid fa-circle-dot ${activeIcon === "portfolio" ? "text-yellow-600" : "text-white"}`}
+                            className={`fa-solid fa-circle-dot hover:text-yellow-600  ${activeIcon === "portfolio" ? "text-yellow-600" : "text-white"}`}
                         ></i>
                         </a>
                         </button>
