@@ -55,7 +55,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             ref={(el) => (elementsRef.current[0] = el)}
             className={`${style.innerHeader} ${style.hidden}`}
           >
-            <div className="flex lg:ml-[30rem] pt-[10rem] mt-[18rem]">
+            <div className="flex lg:ml-[30rem] pt-[10rem] lg:mt-[18rem]">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                 <i
                   className="fa-solid fa-user"

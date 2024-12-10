@@ -23,10 +23,10 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
  
     return (
       
-        <div className={`cursor-none bg-gradient-to-b from-black via-black to-transparent h-[126vh] relative ${style.customCursor}`} ref={ref}>
+        <div className={`cursor-none bg-gradient-to-b from-black via-black to-transparent lg:h-[126vh] h-[250vh] relative ${style.customCursor}`} ref={ref}>
             <div className="">
 
-                <div className="border-gray-500 border-[0.5px] w-[21rem] h-[39rem] rounded-[20px] left-5 top-10 lg:mt-[80px] lg:fixed z-50">
+                <div className="border-gray-500 border-[0.5px] lg:w-[21rem] h-[39rem] mt-5  px-2 lg:px-0 rounded-[20px] lg:left-5 lg:top-10 lg:mt-[80px]  sm:mx-[2rem] lg:fixed z-50">
                    
                    <div className="mt-5 ml-7">
                    <img src={logo} className=" w-[9rem]" />
@@ -66,7 +66,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                 </div>
                     
-                    <div className="flex items-center justify-center mt-16">
+                    <div className="lg:flex lg:items-center justify-center mt-16">
                         <div onClick={handleModalToggle}>
                         <FilledButton text="Contact Me"/>
                         </div>
@@ -82,22 +82,29 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                
 
                 </div>
-                <div className="flex ml-[25rem] pt-[10rem]">
+                <div className="flex lg:ml-[25rem] lg:pt-[10rem] pt-[5rem] ml-2">
                     <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                         <i className="fa-solid fa-house" style={{ color: "#fff", paddingTop: "3px", fontSize:"13px" }}></i>
                         <p className="font-normal text-white font-fontInter uppercase text-[13px]">Introduce</p>
                     </div>
                 </div>
 
+                <div className="lg:hidden">
+                    <p className=" font-normal text-[45px] text-white font-fontInter pt-[3rem] ml-2">
+                        Hi, I am James <span className="text-yellow-600">DivineMercy</span>,A Software Engineer
+                    </p>
+                    
+                </div>
 
-                <div className="text-center lg:ml-[15rem]">
+
+                <div className="text-center lg:ml-[15rem] hidden lg:block">
                     <p className="lg:pt-[5rem] font-normal text-[68px] text-white font-fontInter">
                         Hi, I am James <span className="text-yellow-600">DivineMercy</span>,
                     </p>
                     
                 </div>
 
-                <div className="flex justify-center ml-7">
+                <div className="ext-center lg:ml-[26.5rem] justify-center ml-7  hidden lg:block">
                 <p className="font-normal text-[68px] text-white font-fontInter">A Software Engineer</p>
 
                 </div>
