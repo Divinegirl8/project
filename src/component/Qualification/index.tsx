@@ -20,7 +20,7 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   });
 
   return (
-    <div className="bg-[#000] lg:mt-0 mt-[19rem] w-full h-[full] overflow-x-hidden" >
+    <div className="bg-[#000] lg:mt-0  w-full pb-16 overflow-x-hidden" >
       <div className="flex lg:ml-[30rem] ml-5 lg:pt-[10rem] pt-10">
         <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1" ref={ref}>
           <i className="fa-solid fa-file" style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}></i>

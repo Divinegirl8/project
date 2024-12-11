@@ -66,7 +66,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             </div>
           </div>
 
-          <div className="lg:mt-[-20rem] mt-[-25rem]  mb-20">
+          <div className="lg:mt-[-20rem]  mb-20">
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}

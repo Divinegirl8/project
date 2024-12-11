@@ -7,9 +7,9 @@ import style from "./index.module.css"
 
 const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
     return (
-        <div className='bg-[#000] w-full h-full' ref={ref}>
+        <div className='bg-[#000] w-full pb-16' ref={ref}>
 
-            <div className="flex lg:ml-[30rem] pt-[10rem]">
+            <div className="flex lg:ml-[30rem] pt-16">
                 <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                     <i
                         className="fa-solid fa-circle-dot"
