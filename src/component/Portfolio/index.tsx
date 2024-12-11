@@ -104,7 +104,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                     <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
 
-                        <p className="text-white text-center mb-4 px-4 w-[40rem]">
+                        <p className="text-white text-center mb-4 px-4 lg:w-[40rem]">
                             A simple project that retrieves user data from GraphQLZero, displays it in a table, and includes features like pagination, filtering, and searching. Additionally, it provides a modal to show detailed information about a selected user.
                         </p>
 

@@ -55,18 +55,18 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             ref={(el) => (elementsRef.current[0] = el)}
             className={`${style.innerHeader} ${style.hidden}`}
           >
-            <div className="flex lg:ml-[30rem] pt-[10rem] lg:mt-[18rem]">
-              <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
+            <div className="flex lg:ml-[30rem] lg:pt-[10rem] pt-10 lg:mt-[18rem] ml-5">
+              <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1 ">
                 <i
                   className="fa-solid fa-user"
                   style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
                 ></i>
-                <p className="font-normal text-white font-fontInter uppercase text-[13px]">About</p>
+                <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0">About</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-[-20rem] mb-20 ">
+          <div className="lg:mt-[-20rem] mt-[-25rem]  mb-20">
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
@@ -83,7 +83,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
 
               <p
                 ref={(el) => (elementsRef.current[2] = el)}
-                className={`${style.hidden} text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:ml-[30rem] text-[#999999]`}
+                className={`${style.hidden} lg:text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:ml-[30rem] text-[#999999]`}
               >
                
                I'm a dedicated Software Engineer with expertise in crafting scalable, 

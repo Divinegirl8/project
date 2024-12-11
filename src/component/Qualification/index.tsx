@@ -20,15 +20,15 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   });
 
   return (
-    <div className="bg-[#000] w-full h-[full]" >
-      <div className="flex lg:ml-[30rem] pt-[10rem]">
+    <div className="bg-[#000] lg:mt-0 mt-[19rem] w-full h-[full] overflow-x-hidden" >
+      <div className="flex lg:ml-[30rem] ml-5 lg:pt-[10rem] pt-10">
         <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1" ref={ref}>
           <i className="fa-solid fa-file" style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}></i>
-          <p className="font-normal text-white font-fontInter uppercase text-[13px]">Qualification</p>
+          <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] lg:mt-0 mt-[1px] ">Qualification</p>
         </div>
       </div>
 
-      <div className="text-white lg:ml-[30rem]">
+      <div className="text-white lg:ml-[30rem] ml-5">
         <h1 className="mt-10 text-[50px]">
           <span className="text-yellow-600">Experience </span>& Education
         </h1>
