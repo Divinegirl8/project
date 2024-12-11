@@ -82,7 +82,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                
 
                 </div>
-                <div className="flex lg:ml-[27rem] lg:pt-[10rem] pt-[5rem] ml-2">
+                <div className="flex lg:ml-[27rem] lg:pt-[10rem] pt-[5rem] ml-5">
                     <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                         <i className="fa-solid fa-house" style={{ color: "#fff", paddingTop: "3px", fontSize:"13px" }}></i>
                         <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0">Introduce</p>
@@ -90,7 +90,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
 
                 <div className="lg:hidden">
-                    <p className=" font-normal text-[40px] text-white font-fontInter pt-[3rem] ml-2 ">
+                    <p className=" font-normal text-[40px] text-white font-fontInter pt-[3rem] ml-5 ">
                         Hi, I am James <span className="text-yellow-600">DivineMercy</span>, A Software Engineer
                     </p>
                     
@@ -110,7 +110,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
             
 
-                <div className="text-white  lg:ml-[27rem] ml-2 mt-16 lg:mt-[20rem] flex flex-row gap-16">
+                <div className="text-white  lg:ml-[27rem] ml-5 mt-16 lg:mt-[20rem] flex flex-row gap-16">
                    <div>
                    <h1 className="lg:text-[70px] text-[40px] text-yellow-600">2+</h1>
                    <h4 className="flex flex-col lg:text-[20px] text-[15px]">years of coding <span>experience</span> </h4> 

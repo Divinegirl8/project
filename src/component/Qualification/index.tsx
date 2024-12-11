@@ -29,7 +29,7 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
       </div>
 
       <div className="text-white lg:ml-[30rem] ml-5">
-        <h1 className="mt-10 text-[50px]">
+        <h1 className="mt-10 lg:text-[50px] text-[35px]">
           <span className="text-yellow-600">Experience </span>& Education
         </h1>
 
@@ -38,14 +38,14 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="flex flex-row gap-7 mt-10 group">
             <div>
               <div className="w-3 h-3 mt-[6px] rounded-[50px] bg-[#999999] group-hover:bg-yellow-600"></div>
-              <div className="w-[1px] h-[15rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
+              <div className="w-[1px] lg:h-[15rem] h-[12rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
             </div>
 
             <div>
               <h4 className="text-[#999999] group-hover:text-yellow-600">05/2024 – present</h4>
               <div className="mt-7">
-                <h1 className="text-white text-[30px] font-thin ">Software Engineer</h1>
-                <h1 className="text-[#999999] text-[15px] font-normal">Semicolon Africa</h1>
+                <h1 className="text-white lg:text-[30px] text-[25px] font-thin ">Software Engineer</h1>
+                <h1 className="text-[#999999] lg:text-[15px] text-[13px] font-normal">Semicolon Africa</h1>
               </div>
             </div>
           </div>
@@ -56,14 +56,14 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="flex flex-row gap-7 group">
             <div>
               <div className="w-3 h-3 rounded-[50px] bg-[#999999] group-hover:bg-yellow-600"></div>
-              <div className="w-[1px] h-[15rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
+              <div className="w-[1px] lg:h-[15rem] h-[12rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
             </div>
 
             <div>
               <h4 className="text-[#999999] group-hover:text-yellow-600 mt-[-7px]">2022</h4>
               <div className="mt-7">
-                <h1 className="text-white text-[30px] font-thin ">Frontend Engineering</h1>
-                <h1 className="text-[#999999] text-[15px] font-normal">Grapple Space</h1>
+                <h1 className="text-white lg:text-[30px] text-[25px] font-thin ">Frontend Engineering</h1>
+                <h1 className="text-[#999999] lg:text-[15px] text-[13px] font-normal">Grapple Space</h1>
               </div>
             </div>
           </div>
@@ -74,14 +74,14 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="flex flex-row gap-7 group">
             <div>
               <div className="w-3 h-3 rounded-[50px] bg-[#999999] group-hover:bg-yellow-600"></div>
-              <div className="w-[1px] h-[15rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
+              <div className="w-[1px] lg:h-[15rem] h-[12rem] ml-[5px] rounded-[50px] bg-[#999999]"></div>
             </div>
 
             <div>
-              <h4 className="text-[#999999] group-hover:text-yellow-600 mt-[-6px]">2023– 2024</h4>
+              <h4 className="text-[#999999] group-hover:text-yellow-600 mt-[-6px] ">2023– 2024</h4>
               <div className="mt-7">
-                <h1 className="text-white text-[30px] font-thin">Software Engineering</h1>
-                <h1 className="text-[#999999] text-[15px] font-normal ">Semicolon Africa</h1>
+                <h1 className="text-white lg:text-[30px] text-[25px] font-thin">Software Engineering</h1>
+                <h1 className="text-[#999999] lg:text-[15px] text-[13px] font-normal ">Semicolon Africa</h1>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ interface CircleProps {
 const Circle: React.FC<CircleProps> = ({ handleIconClick }) => {
   return (
     <div
-      className="lg:flex lg:items-center justify-center lg:ml-[40rem] ml-2"
+      className="lg:flex lg:items-center justify-center lg:ml-[40rem] ml-5"
       onClick={handleIconClick}
     >
       <div className="rounded-[100px] h-[11rem] w-[11rem]  border border-gray-500 text-white flex items-center justify-center relative cursor-pointer">
