@@ -121,6 +121,30 @@ const Homepage: React.FC = () => {
           ))}
         </div>
 
+        <div className="border-gray-500 border-[0.5px] w-[2rem] h-[13rem] rounded-[20px] items-center fixed right-2 top-1/2 transform -translate-y-1/2 lg:hidden flex-col text-white text-center gap-3 z-50 pt-10 ">
+          {(Object.keys(sectionRefs) as Array<keyof typeof sectionRefs>).map((section) => (
+            <div className="relative group" key={section}>
+              <button
+                className="hover:text-yellow-600 text-[15px] cursor-pointer"
+                onClick={() => handleIconClick(section, sectionRefs[section])}
+              >
+                <i
+                  className={`fa-solid ${iconClasses[section]}  ${
+                    activeIcon === section ? "text-yellow-600" : "text-white"
+                  }`}
+                ></i>
+              </button>
+              <span
+                  className="absolute right-[33px] top-1/2 transform -translate-y-1/2 bg-[#3b3b3b] text-white text-sm py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 min-w-[6rem] w-fit whitespace-nowrap hidden"
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                  <span className="absolute right-[-8px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#3b3b3b] border-b-[6px] border-b-transparent"></span>
+              </span>
+
+            </div>
+          ))}
+        </div>
+
         <HeroPage ref={HeroPageRef} />
         <div className="lg:mt-[-30rem] mt-[-40rem] mb-4 lg:mb-0">
           <Circle handleIconClick={() => handleIconClick("portfolio", portfolioRef)} />
