@@ -193,25 +193,28 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
     <>
    
       <div className={style.header} ref={ref}>
-        <div className="justify-center items-center lg:pt-24">
+        <div className="text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10">
+         
+       
+        <div className="justify-center items-center flex lg:pt-28">
           <div
             ref={(el) => (elementsRef.current[0] = el)}
-            className={`lg:h-[65vh] lg:w-full ${style.hidden}`}
+            className={` lg:w-full ${style.hidden}`}
           >
-            <div className="flex lg:pt-12 pt-10 lg:pb-20  ml-5">
+            <div className="lg:pt-12 pt-10 lg:pb-20  ml-5">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1 ">
                 <i
-                  className="fa-solid fa-user"
-                  style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
+                  className={`fa-solid fa-user ${style.icon}`}
+                  style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }} 
                 ></i>
-                <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0">About</p>
+                <p className={`font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0`}>About</p>
               </div>
             </div>
-            <div className="lg:mb-0 mb-20">
+            <div className="lg:mb-0 mb-20 ">
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
-                className={`${style.hidden} mt-8  max-w-xs  lg:mx-0 mx-5`}
+                className={`${style.hidden}  ${style.abt} max-w-xs lg:ml-1  lg:mx-0 mx-5`}
               >
                 <button
                   onClick={togglePlayPause}
@@ -224,7 +227,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
 
               <p
                 ref={(el) => (elementsRef.current[2] = el)}
-                className={`${style.hidden} lg:max-w-xs  lg:mx-0 mx-6 text-[#999999]`}
+                className={`${style.hidden} ${style.abt} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
               >
                
                I'm a dedicated Software Engineer with expertise in crafting scalable, 
@@ -235,7 +238,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
                I thrive on tackling challenges and collaborating with teams to create innovative digital 
                solutions while staying ahead of tech trends.
               </p>
-            </div>
+            </div> </div>
           </div>
 
           </div>
