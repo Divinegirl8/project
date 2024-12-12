@@ -55,7 +55,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             ref={(el) => (elementsRef.current[0] = el)}
             className={`lg:h-[65vh] lg:w-full ${style.hidden}`}
           >
-            <div className="flex lg:ml-[30rem] lg:pt-[10rem] pt-10 lg:mt-[18rem] ml-5">
+            <div className="flex lg:ml-[30rem] lg:pt-[10rem] pt-10  ml-5">
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1 ">
                 <i
                   className="fa-solid fa-user"
