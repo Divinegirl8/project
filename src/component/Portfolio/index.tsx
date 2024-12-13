@@ -7,21 +7,26 @@ import style from "./index.module.css"
 
 const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
     return (
-        <div className='bg-[#000] w-full pb-16' ref={ref}>
+        <div className='bg-[#000] w-full pb-16 lg:justify-center lg:items-center lg:flex lg:flex-col' ref={ref}>
 
-            <div className="flex lg:ml-[30rem] ml-5 lg:pt-16">
-                <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
-                    <i
-                        className="fa-solid fa-circle-dot"
-                        style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
-                    ></i>
-                    <p className="font-normal text-white font-fontInter uppercase lg;text-[13px] text-[12px] lg:mt-0 mt-[1px]">Portfolio</p>
-                </div>
-            </div>
+                   <div className="lg:mr-[20rem]">
+                   <div className="flex  ml-5 lg:pt-16">
+                            <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
+                                <i
+                                    className="fa-solid fa-circle-dot"
+                                    style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
+                                ></i>
+                                <p className="font-normal text-white font-fontInter uppercase lg;text-[13px] text-[12px] lg:mt-0 mt-[1px]">Portfolio</p>
+                            </div>
+                        </div>
 
-            <h1 className=" mt-10  lg:text-[50px] text-[35px] text-white lg:ml-[30rem] ml-5">Projects </h1>
+                        <h1 className=" mt-10  lg:text-[50px] text-[35px] text-white  ml-5">Projects </h1>
+                  </div>
 
-            <div className="lg:ml-[30rem] mt-10">
+               <div className="lg:ml-[20rem]">
+
+
+               <div className="mt-10">
                 <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
@@ -30,7 +35,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     />
 
                     {/* Skills */}
-                    <div className="top-[27rem] ml- 1 lg:mx-2 absolute inset-0 hidden lg:block">
+                    <div className="top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block">
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Java
                         </span>
@@ -87,11 +92,11 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                             </span>
                         </div>
 
-                    <div className="lg:absolute lg:inset-0 lg:ml-[-10rem] ml-3 lg:flex lg:flex-col items-center justify-center lg:opacity-0 lg:bg-black lg:bg-opacity-30 lg:group-hover:opacity-100 lg:transition-opacity duration-300 lg:mt-0 mt-5">
+                    <div className="lg:absolute lg:inset-0 lg:ml-0   ml-3 lg:flex lg:flex-col items-center justify-center lg:opacity-0 lg:bg-black lg:bg-opacity-30 lg:group-hover:opacity-100 lg:transition-opacity duration-300 lg:mt-0 mt-5">
 
                         {/* Buttons */}
                         <div>
-                            <button className="bg-white text-black lg:px-4  px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px]">
+                            <button className="bg-white text-black lg:px-4   px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px]">
                                 <a href="https://password-generator-react-pi-ruddy.vercel.app/" target="_blank">go to website</a>
                             </button>
                             <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px]">
@@ -102,7 +107,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
             </div>
 
-            <div className="lg:ml-[30rem] mt-10 lg:block hidden">
+            <div className="mt-10 lg:block hidden">
                 <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
@@ -135,7 +140,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         </span>
                     </div>
 
-                    <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute inset-0  flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
 
                         <p className="text-white text-center mb-4 px-4 lg:w-[40rem]">
                             A simple project that retrieves user data from GraphQLZero, displays it in a table, and includes features like pagination, filtering, and searching. Additionally, it provides a modal to show detailed information about a selected user.
@@ -154,7 +159,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
             </div>
 
-            <div className="lg:ml-[30rem] mt-10">
+            <div className="mt-10">
                 <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
@@ -201,7 +206,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                             </span>
                         </div>
 
-                    <div className="absolute inset-0 ml-[-10rem] flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute inset-0 lg:ml-0   flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">
                         {/* Buttons */}
                         <div>
                             {/* <button className="bg-white text-black px-4 py-2 rounded-md mx-2 hover:bg-gray-200">
@@ -215,7 +220,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
             </div>
 
-            <div className="lg:ml-[30rem] mt-10">
+            <div className="mt-10">
                 <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
@@ -262,7 +267,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     </div>
 
 
-                    <div className="lg:absolute lg:inset-0 lg:ml-[-10rem] ml-3 lg:flex lg:flex-col items-center justify-center lg:opacity-0 lg:bg-black lg:bg-opacity-30 lg:group-hover:opacity-100 lg:transition-opacity duration-300 lg:mt-0 mt-5">
+                    <div className="lg:absolute lg:inset-0  lg:ml-0 ml-3 lg:flex lg:flex-col items-center justify-center lg:opacity-0 lg:bg-black lg:bg-opacity-30 lg:group-hover:opacity-100 lg:transition-opacity duration-300 lg:mt-0 mt-5">
                         {/* Buttons */}
                         <div>
                             <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 hover:bg-gray-200 text-[12px] lg:text-[15px]">
@@ -278,6 +283,10 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     
                 </div>
             </div>
+
+
+
+               </div>
 
         </div>
     )

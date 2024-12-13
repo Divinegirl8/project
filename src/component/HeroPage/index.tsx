@@ -161,7 +161,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
         <div className={`cursor-none bg-gradient-to-b from-black via-black to-transparent lg:pb-[15rem] pb-[45rem]  relative  ${style.customCursor}`} ref={ref}>
             <div className="">
 
-                <div className="border-gray-500 border-[0.5px] lg:w-[21rem] h-[39rem] mt-5  px-2 mx-5 lg:px-0 rounded-[20px] lg:left-5 lg:top-10 lg:mt-[80px] sm:mx-[2rem] lg:fixed z-50">
+                <div className="border-gray-500 border-[0.5px] lg:w-[21rem] h-[39rem] mt-5  px-2 mx-5 lg:px-0 rounded-[20px] lg:left-5 lg:top-10 lg:mt-[60px] sm:mx-[2rem] lg:fixed z-50">
                    
                    <div className="mt-5 ml-7">
                    <img src={logo} className=" w-[9rem]" />

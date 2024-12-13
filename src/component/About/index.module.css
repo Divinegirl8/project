@@ -87,11 +87,7 @@ body {
 }
 
 @media (min-width: 2500px) {
-  .abt{
-    font-size: 40px;
-    max-width: 80rem;
-   
-  }
+  
   .icon{
     font-size: 50px;
   }

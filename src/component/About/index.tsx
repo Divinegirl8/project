@@ -214,7 +214,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             <div>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
-                className={`${style.hidden}  ${style.abt} max-w-xs lg:ml-1  lg:mx-0 mx-5`}
+                className={`${style.hidden}  max-w-xs lg:ml-1  lg:mx-0 mx-5`}
               >
                 <button
                   onClick={togglePlayPause}
@@ -227,7 +227,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
 
               <p
                 ref={(el) => (elementsRef.current[2] = el)}
-                className={`${style.hidden} ${style.abt} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
+                className={`${style.hidden} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
               >
                
                I'm a dedicated Software Engineer with expertise in crafting scalable, 
