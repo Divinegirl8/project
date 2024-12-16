@@ -269,14 +269,28 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </div>
                 </div>
 
-                    <div className="font-normal text-[68px] text-white font-fontInter ml-[20rem] mt-[6rem]">
+                    {/* <div className="font-normal text-[68px] text-white font-fontInter ml-[20rem] mt-[6rem]">
                     <p>
                         Hi, I am James <span className={`text-yellow-600 ${style.txt} `}>DivineMercy</span>,
                     </p>
                    
                     <p>A Software Engineer</p>
-                    </div>
-                 </div>
+                    </div> */}
+
+                      <div className="font-normal text-[68px] text-white font-fontInter ml-[7rem] mt-[6rem]">
+                    <p>
+                        Hi, I am James <span className={`${style.first} ml-[20px] `}> DivineMercy</span><span className={` ${style.second}  ml-[20px]`}>DivineMercy</span>
+                    </p>
+                      
+                
+                    <p>A Software Engineer</p>
+                    </div> 
+
+
+
+                                    
+
+          </div>
 
 
               
@@ -306,11 +320,6 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                    <h4 className="flex flex-col lg:text-[20px] text-[15px]">completed <span>projects</span></h4> 
                     </div> 
                 </div>
-               
-<div className={style.main}>
-  <h2 >Shabbir</h2>
-  <h2 >Shabbir</h2>
-</div>
 
                             </div>
             
