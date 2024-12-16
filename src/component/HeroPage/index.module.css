@@ -11,3 +11,28 @@
   animation: rotate 10s linear infinite; 
 } */
 
+
+
+.txt {
+  color: transparent;
+  -webkit-text-stroke: 2px #ca8a04;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to top, #facc15 0%, #ca8a04 50%, transparent 100%);
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: fillEffect 3s infinite ease-in-out;
+}
+
+@keyframes fillEffect {
+  0% {
+      background-position: 0% 100%;
+  }
+  50% {
+      background-position: 0% 50%; 
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
