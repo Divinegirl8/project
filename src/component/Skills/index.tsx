@@ -294,13 +294,13 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
   const slideIn3 = useSpring({
     transform: inView3 ? "translateX(0)" : "translateX(-60%)",
     opacity: inView3 ? 1 : 0,
-    config: { tension: 120, friction: 60 },
+    config: { tension: 150, friction: 60 },
   });
 
   const slideIn4 = useSpring({
     transform: inView3 ? "translateX(0)" : "translateX(60%)",
     opacity: inView3 ? 1 : 0,
-    config: { tension: 120, friction: 60 },
+    config: { tension: 150, friction: 60 },
   });
     return(
       
