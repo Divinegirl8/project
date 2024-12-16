@@ -4,13 +4,58 @@ import dashboard from "../../asset/portfolio/dashboard-user.png"
 import blog from "../../asset/portfolio/blog.png"
 import myweb from "../../asset/portfolio/my-web.png"
 import style from "./index.module.css"
+import { useInView } from "react-intersection-observer";
+import { useSpring, animated } from "react-spring";
 
 const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
+    const [ref1, inView1] = useInView({ triggerOnce: false });
+    const [ref2, inView2] = useInView({ triggerOnce: false });
+    const [ref3, inView3] = useInView({ triggerOnce: false });
+    const [ref4, inView4] = useInView({ triggerOnce: false });
+    const [ref5, inView5] = useInView({ triggerOnce: false });
+    const [ref6, inView6] = useInView({ triggerOnce: false });
+  
+  
+    const slideIn1 = useSpring({
+      transform: inView1 ? "translateY(0)" : "translateY(100%)",
+      opacity: inView1 ? 1 : 0,
+      config: { tension: 120, friction: 40 },
+    });
+  
+    const slideIn2 = useSpring({
+      transform: inView2 ? "translateY(0)" : "translateY(100%)",
+      opacity: inView2 ? 1 : 0,
+      config: { tension: 120, friction: 40 },
+    });
+
+    const slideIn3 = useSpring({
+        transform: inView3 ? "translateX(0)" : "translateX(-100%)",
+        opacity: inView3 ? 1 : 0,
+        config: { tension: 120, friction: 40 },
+      });
+      const slideIn4 = useSpring({
+        transform: inView4 ? "translateX(0)" : "translateX(100%)",
+        opacity: inView4 ? 1 : 0,
+        config: { tension: 120, friction: 40 },
+      });
+      const slideIn5 = useSpring({
+        transform: inView5 ? "translateY(0)" : "translateY(100%)",
+        opacity: inView5 ? 1 : 0,
+        config: { tension: 120, friction: 40 },
+      });
+
+      const slideIn6 = useSpring({
+        transform: inView6 ? "translateX(0)" : "translateX(100%)",
+        opacity: inView6 ? 1 : 0,
+        config: { tension: 120, friction: 40 },
+      });
+
     return (
-        <div className='bg-[#000] w-full pb-16 lg:justify-center lg:items-center lg:flex lg:flex-col' ref={ref}>
+        <div className='bg-[#000] w-full pb-16 lg:justify-center lg:items-center lg:flex lg:flex-col overflow-x-hidden overflow-y-hidden' ref={ref}>
 
                    <div className="lg:mr-[20rem]">
-                   <div className="flex  ml-5 lg:pt-16">
+                 <animated.div ref={ref1} style={slideIn1}>
+                 <div className="flex  ml-5 lg:pt-16">
                             <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                                 <i
                                     className="fa-solid fa-circle-dot"
@@ -19,15 +64,19 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                                 <p className="font-normal text-white font-fontInter uppercase lg;text-[13px] text-[12px] lg:mt-0 mt-[1px]">Portfolio</p>
                             </div>
                         </div>
+                 </animated.div>
 
-                        <h1 className=" mt-10  lg:text-[50px] text-[35px] text-white  ml-5">Projects </h1>
+                       <animated.div ref={ref2} style={slideIn2}>
+                       <h1 className=" mt-10  lg:text-[50px] text-[35px] text-white  ml-5">Projects </h1>
+                       </animated.div>
                   </div>
 
                <div className="lg:ml-[20rem]">
 
 
                <div className="mt-10">
-                <div className={`relative group ${style.slideUp}`}>
+               <animated.div ref={ref3} style={slideIn3}>
+               <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
                         src={passGen}
@@ -105,10 +154,12 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         </div>
                     </div>
                 </div>
+               </animated.div>
             </div>
 
             <div className="mt-10 lg:block hidden">
-                <div className={`relative group ${style.slideUp}`}>
+               <animated.div ref={ref4} style={slideIn4}>
+               <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
                         src={dashboard}
@@ -157,10 +208,12 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         </div>
                     </div>
                 </div>
+               </animated.div>
             </div>
 
             <div className="mt-10">
-                <div className={`relative group ${style.slideUp}`}>
+              <animated.div ref={ref5} style={slideIn5}>
+              <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
                         src={myweb}
@@ -218,10 +271,12 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         </div>
                     </div>
                 </div>
+              </animated.div>
             </div>
 
             <div className="mt-10">
-                <div className={`relative group ${style.slideUp}`}>
+               <animated.div ref={ref6} style={slideIn6}>
+               <div className={`relative group ${style.slideUp}`}>
                     {/* Image */}
                     <img
                         src={blog}
@@ -282,6 +337,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     </div>
                     
                 </div>
+               </animated.div>
             </div>
 
 
