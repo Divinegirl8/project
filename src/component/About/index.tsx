@@ -196,7 +196,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
         <div className="text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10 overflow-y-hidden">
          
        
-        <div className="justify-center items-center flex lg:pt-28">
+        <div className="justify-center items-center flex lg:pt-10">
           <div
             ref={(el) => (elementsRef.current[0] = el)}
             className={` lg:w-full ${style.hidden}`}
@@ -218,11 +218,11 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             <animated.div ref={ref3} style={slideIn3}>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
-                className={`${style.hidden}  max-w-xs lg:ml-1  mt-8 lg:mx-0 mx-5`}
+                className={`${style.hidden}  max-w-xs lg:ml-1  lg:mt-0 mt-8 lg:mx-0 mx-5`}
               >
                 <button
                   onClick={togglePlayPause}
-                  className="px-4 py-8 text-white rounded-full"
+                  className="px-4 py-8 lg:py-0 text-white rounded-full"
                 >
                   {isPlaying ? <span>❚❚</span> : <span>&#9654;</span>}
                 </button>
