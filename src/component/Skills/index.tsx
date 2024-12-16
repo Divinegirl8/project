@@ -44,151 +44,151 @@
       
 //         <div className='bg-[#343434]  w-full pt-8 lg:pt-12 pb-16'ref={ref} >
 
-//           <div className="lg:justify-center lg:flex lg:flex-col lg:items-center"> 
+        //   <div className="lg:justify-center lg:flex lg:flex-col lg:items-center"> 
 
         
-//                <div className="lg:ml-[26rem]">
+        //        <div className="lg:ml-[26rem]">
 
 
-//             <div className="flex ml-5 lg:pt-[4rem] pt-8">
-//                           <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
-//                             <i
-//                               className="fa-solid fa-briefcase"
-//                               style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
-//                             ></i>
-//                             <p className="font-normal text-white font-fontInter uppercase text-[13px]">Skills</p>
-//                           </div>
-//                         </div>
+        //     <div className="flex ml-5 lg:pt-[4rem] pt-8">
+        //                   <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
+        //                     <i
+        //                       className="fa-solid fa-briefcase"
+        //                       style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
+        //                     ></i>
+        //                     <p className="font-normal text-white font-fontInter uppercase text-[13px]">Skills</p>
+        //                   </div>
+        //                 </div>
 
 
-//                         <h1 className="text-white   ml-5 text-[35px] lg:text-[50px]  mt-10">Technologies I Use</h1>
-//                         <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4">
+        //                 <h1 className="text-white   ml-5 text-[35px] lg:text-[50px]  mt-10">Technologies I Use</h1>
+        //                 <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4">
                 
 
 
 
-//                         <div>
-//                   <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-6">
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={java} className="w-20 h-20" title="java" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={react} className="w-16 h-16" title="react js" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={js} className="w-16 h-16" title="javascript"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={vue} className="w-16 " title="vue js"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={bootstrap} className="w-14 h-14" title="bootstrap"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={apollo} className="w-16 h-16" title="apollo"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={nodejs} className="w-16 h-16" title="node js"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={redux} className="w-14 h-14" title="redux"/>
-//                   </div>
-//                    <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={css} className="w-16 h-16" title="css"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={html} className="w-16 h-16" title="html"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={tsx} className="w-20 h-16" title="typescript"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={junit} className="w-16 h-16" title="junit"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={render} className="w-16 h-16" title="render"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={pytest} className="w-16 h-16" title="pytest"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={materialUi} className="w-16 h-16" title="material ui"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={docker} className="w-16 h-16" title="docker"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={git} className="w-16 h-16" title="git"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={figma} className="w-16 h-16" title="figma"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={jbpm} className="w-16 h-16" title="jbpm"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={python} className="w-20 h-20" title="python"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={next} className="w-14 h-14" title="next js"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={reactNative} className="w-16 h-16" title="react native" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={springBoot} className="w-20 h-20" title="spring boot"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={tailwindcss} className="w-20 h-20" title="tailwindcss" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={mongodb} className="w-16 h-16" title="mongodb"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={pg} className="w-16 h-16" title="postgres"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={mysql} className="w-16 h-14" title="mysql"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={postman} className="w-16 h-16" title="postman"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={linux} className="w-16 h-16" title="linux"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={macos} className="w-16 h-14" title="macOs"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={windows} className="w-16 h-14" title="windows"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={go} className="w-[85px] h-20" title="go"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={keycloak} className="w-16 h-16" title="keycloak" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={swagger} className="w-16 h-16" title="swagger" />
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={mockito} className="w-16 h-14" title="mockito"/>
-//                   </div>
-//                   <div className={`flex justify-center items-center ${style.iconContainer}`}>
-//                     <img src={flutter} className="w-16 h-14" title="flutter" />
-//                   </div>
+        //                 <div>
+        //           <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-6">
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={java} className="w-20 h-20" title="java" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={react} className="w-16 h-16" title="react js" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={js} className="w-16 h-16" title="javascript"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={vue} className="w-16 " title="vue js"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={bootstrap} className="w-14 h-14" title="bootstrap"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={apollo} className="w-16 h-16" title="apollo"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={nodejs} className="w-16 h-16" title="node js"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={redux} className="w-14 h-14" title="redux"/>
+        //           </div>
+        //            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={css} className="w-16 h-16" title="css"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={html} className="w-16 h-16" title="html"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={tsx} className="w-20 h-16" title="typescript"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={junit} className="w-16 h-16" title="junit"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={render} className="w-16 h-16" title="render"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={pytest} className="w-16 h-16" title="pytest"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={materialUi} className="w-16 h-16" title="material ui"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={docker} className="w-16 h-16" title="docker"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={git} className="w-16 h-16" title="git"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={figma} className="w-16 h-16" title="figma"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={jbpm} className="w-16 h-16" title="jbpm"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={python} className="w-20 h-20" title="python"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={next} className="w-14 h-14" title="next js"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={reactNative} className="w-16 h-16" title="react native" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={springBoot} className="w-20 h-20" title="spring boot"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={tailwindcss} className="w-20 h-20" title="tailwindcss" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={mongodb} className="w-16 h-16" title="mongodb"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={pg} className="w-16 h-16" title="postgres"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={mysql} className="w-16 h-14" title="mysql"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={postman} className="w-16 h-16" title="postman"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={linux} className="w-16 h-16" title="linux"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={macos} className="w-16 h-14" title="macOs"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={windows} className="w-16 h-14" title="windows"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={go} className="w-[85px] h-20" title="go"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={keycloak} className="w-16 h-16" title="keycloak" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={swagger} className="w-16 h-16" title="swagger" />
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={mockito} className="w-16 h-14" title="mockito"/>
+        //           </div>
+        //           <div className={`flex justify-center items-center ${style.iconContainer}`}>
+        //             <img src={flutter} className="w-16 h-14" title="flutter" />
+        //           </div>
 
-//                 </div>
-//                         </div>
+        //         </div>
+        //                 </div>
 
 
-//               </div>
+        //       </div>
 
-//                </div>
+        //        </div>
 
             
 
-//         </div>  </div>
+        // </div>  </div>
      
 //     )
 
@@ -278,6 +278,7 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
   const [ref36] = useInView({ triggerOnce: false });
   const [ref37] = useInView({ triggerOnce: false });  
   const [ref38] = useInView({ triggerOnce: false });
+  const [ref39,inView4] = useInView({triggerOnce: false});
   
   const slideIn1 = useSpring({
     transform: inView1 ? "translateY(0)" : "translateY(100%)",
@@ -292,15 +293,21 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
   });
 
   const slideIn3 = useSpring({
-    transform: inView3 ? "translateX(0)" : "translateX(-60%)",
+    transform: inView3 ? "translateX(0)" : "translateX(-100%)",
     opacity: inView3 ? 1 : 0,
     config: { tension: 150, friction: 60 },
   });
 
   const slideIn4 = useSpring({
-    transform: inView3 ? "translateX(0)" : "translateX(60%)",
+    transform: inView3 ? "translateX(0)" : "translateX(100%)",
     opacity: inView3 ? 1 : 0,
-    config: { tension: 150, friction: 60 },
+    config: { tension: 150, friction: 100 },
+  });
+
+  const slideIn5 = useSpring({
+    transform: inView4 ? "translateX(0)" : "translateX(100%)",
+    opacity: inView4 ? 1 : 0,
+    config: { tension: 150, friction: 100 },
   });
     return(
       
@@ -312,7 +319,7 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
                <div className="lg:ml-[26rem]">
 
 
-            <div className="flex ml-5 lg:pt-[4rem] pt-8">
+            <div className="flex ml-5 lg:pt-[4rem] pt-8 ">
                           <animated.div ref={ref1} style={slideIn1}>
                           <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
                             <i
@@ -329,7 +336,7 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
                         <h1 className="text-white   ml-5 text-[35px] lg:text-[50px]  mt-10">Technologies I Use</h1>
                         </animated.div>
 
-                        <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4">
+                        <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4 hidden lg:block overflow-x-hidden">
               
                         <div>
                   <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-6">
@@ -563,7 +570,138 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
 
                </div>
 
-        </div>  </div>
+        </div> 
+
+
+        <div className=" lg:hidden overflow-x-hidden overflow-y-hidden"> 
+          <animated.div ref={ref39} style={slideIn5}>
+          <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4">
+              <div>
+            <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-6">
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={java} className="w-20 h-20" title="java" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={react} className="w-16 h-16" title="react js" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={js} className="w-16 h-16" title="javascript"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={vue} className="w-16 " title="vue js"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={bootstrap} className="w-14 h-14" title="bootstrap"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={apollo} className="w-16 h-16" title="apollo"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={nodejs} className="w-16 h-16" title="node js"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={redux} className="w-14 h-14" title="redux"/>
+            </div>
+              <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={css} className="w-16 h-16" title="css"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={html} className="w-16 h-16" title="html"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={tsx} className="w-20 h-16" title="typescript"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={junit} className="w-16 h-16" title="junit"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={render} className="w-16 h-16" title="render"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={pytest} className="w-16 h-16" title="pytest"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={materialUi} className="w-16 h-16" title="material ui"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={docker} className="w-16 h-16" title="docker"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={git} className="w-16 h-16" title="git"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={figma} className="w-16 h-16" title="figma"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={jbpm} className="w-16 h-16" title="jbpm"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={python} className="w-20 h-20" title="python"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={next} className="w-14 h-14" title="next js"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={reactNative} className="w-16 h-16" title="react native" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={springBoot} className="w-20 h-20" title="spring boot"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={tailwindcss} className="w-20 h-20" title="tailwindcss" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={mongodb} className="w-16 h-16" title="mongodb"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={pg} className="w-16 h-16" title="postgres"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={mysql} className="w-16 h-14" title="mysql"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={postman} className="w-16 h-16" title="postman"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={linux} className="w-16 h-16" title="linux"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={macos} className="w-16 h-14" title="macOs"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={windows} className="w-16 h-14" title="windows"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={go} className="w-[85px] h-20" title="go"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={keycloak} className="w-16 h-16" title="keycloak" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={swagger} className="w-16 h-16" title="swagger" />
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={mockito} className="w-16 h-14" title="mockito"/>
+            </div>
+            <div className={`flex justify-center items-center ${style.iconContainer}`}>
+              <img src={flutter} className="w-16 h-14" title="flutter" />
+            </div>
+
+          </div>
+                  </div>
+
+
+          </div>
+          </animated.div>
+
+     
+
+
+
+</div>  
+        
+        
+         </div>
      
     )
 

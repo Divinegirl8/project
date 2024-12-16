@@ -193,7 +193,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
     <>
    
       <div className={style.header} ref={ref}>
-        <div className="text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10">
+        <div className="text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10 overflow-y-hidden">
          
        
         <div className="justify-center items-center flex lg:pt-28">
