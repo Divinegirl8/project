@@ -94,30 +94,30 @@ body {
 
  
 }
-
+/* 
 .hidden {
   opacity: 0;
-  transform: translateY(30px); /* Start below the final position */
+  transform: translateY(30px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .visible {
   opacity: 1;
-  animation: bounceUp 1s ease-out forwards; /* Apply bounce animation */
+  animation: bounceUp 1s ease-out forwards; 
 }
 
-/* Keyframes for the bounce-up effect */
+
 @keyframes bounceUp {
   0% {
-    transform: translateY(30px); /* Start below */
+    transform: translateY(30px);
     opacity: 0;
   }
   50% {
-    transform: translateY(-10px); /* Move above the final position (bounce effect) */
+    transform: translateY(-10px);
     opacity: 0.7;
   }
   100% {
-    transform: translateY(0); /* Final position */
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -126,4 +126,4 @@ body {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
+} */

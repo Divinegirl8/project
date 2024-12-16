@@ -279,7 +279,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                       <div className="font-normal text-[68px] text-white font-fontInter ml-[7rem] mt-[6rem]">
                     <p>
-                        Hi, I am James <span className={`${style.first} ml-[20px] `}> DivineMercy</span><span className={` ${style.second}  ml-[20px]`}>DivineMercy</span>
+                        Hi, I am James <span className={`${style.first} ml-[20px] `}> DivineMercy</span><span className={` ${style.second}  ml-[20px]`}>DivineMercy,</span>
                     </p>
                       
                 

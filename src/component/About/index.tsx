@@ -50,27 +50,28 @@
 //     <>
    
 //       <div className={style.header} ref={ref}>
-//         <div>
+//         <div className="text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10">
+         
+       
+//         <div className="justify-center items-center flex lg:pt-28">
 //           <div
 //             ref={(el) => (elementsRef.current[0] = el)}
-//             className={`lg:h-[65vh] lg:w-full ${style.hidden}`}
+//             className={` lg:w-full ${style.hidden}`}
 //           >
-//             <div className="flex lg:ml-[30rem] lg:pt-[10rem] pt-10  ml-5">
+//             <div className="lg:pt-12 pt-10 lg:pb-20  ml-5">
 //               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1 ">
 //                 <i
-//                   className="fa-solid fa-user"
-//                   style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
+//                   className={`fa-solid fa-user ${style.icon}`}
+//                   style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }} 
 //                 ></i>
-//                 <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0">About</p>
+//                 <p className={`font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0`}>About</p>
 //               </div>
 //             </div>
-//           </div>
-
-//           <div className="lg:mt-[-20rem]  mb-20">
+//             <div className="lg:mb-0 mb-20 ">
 //             <div>
 //               <div
 //                 ref={(el) => (elementsRef.current[1] = el)}
-//                 className={`${style.hidden} lg:text-center mt-8 lg:ml-[45rem] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto`}
+//                 className={`${style.hidden}  max-w-xs lg:ml-1  lg:mx-0 mx-5`}
 //               >
 //                 <button
 //                   onClick={togglePlayPause}
@@ -83,7 +84,7 @@
 
 //               <p
 //                 ref={(el) => (elementsRef.current[2] = el)}
-//                 className={`${style.hidden} lg:text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:ml-[30rem] text-[#999999]`}
+//                 className={`${style.hidden} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
 //               >
                
 //                I'm a dedicated Software Engineer with expertise in crafting scalable, 
@@ -94,8 +95,14 @@
 //                I thrive on tackling challenges and collaborating with teams to create innovative digital 
 //                solutions while staying ahead of tech trends.
 //               </p>
-//             </div>
+//             </div> </div>
 //           </div>
+
+//           </div>
+
+         
+
+         
 //         </div>
 
 //         <div>
@@ -136,14 +143,11 @@
 // export default About;
 
 
-
-
-
-
-
 import { useRef, useState, useEffect } from "react";
 import style from "./index.module.css";
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { useSpring, animated } from "react-spring";
 
 const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -162,32 +166,28 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
   };
 
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [ref1, inView1] = useInView({ triggerOnce: false });
+  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: false });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-        
-          entry.target.classList.add(style.visible);
-          entry.target.classList.add(style.bounceUp);
-          entry.target.classList.remove(style.hidden);
-        } else {
-      
-          entry.target.classList.remove(style.bounceUp);
-        }
-      });
-    }, { threshold: 0.5 }); 
 
-    elementsRef.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
+  const slideIn1 = useSpring({
+    transform: inView1 ? "translateY(0)" : "translateY(100%)",
+    opacity: inView1 ? 1 : 0,
+    config: { tension: 120, friction: 40 },
+  });
 
-    return () => {
-      elementsRef.current.forEach((el) => {
-        if (el) observer.unobserve(el);
-      });
-    };
-  }, []);
+  const slideIn2 = useSpring({
+    transform: inView2 ? "translateY(0)" : "translateY(100%)",
+    opacity: inView2 ? 1 : 0,
+    config: { tension: 120, friction: 40 },
+  });
+
+  const slideIn3 = useSpring({
+    transform: inView3 ? "translateY(0)" : "translateY(100%)",
+    opacity: inView3 ? 1 : 0,
+    config: { tension: 100, friction: 50 },
+  });
 
   return (
     <>
@@ -201,7 +201,8 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             ref={(el) => (elementsRef.current[0] = el)}
             className={` lg:w-full ${style.hidden}`}
           >
-            <div className="lg:pt-12 pt-10 lg:pb-20  ml-5">
+            <animated.div ref={ref1} style={slideIn1} >
+            <div className="lg:pt-12 pt-10 lg:pb-20  ml-5" >
               <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1 ">
                 <i
                   className={`fa-solid fa-user ${style.icon}`}
@@ -209,9 +210,12 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
                 ></i>
                 <p className={`font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] mt-[1px] lg:mt-0`}>About</p>
               </div>
-            </div>
+            </div></animated.div>
+
             <div className="lg:mb-0 mb-20 ">
-            <div>
+             
+            <div >
+            <animated.div ref={ref2} style={slideIn2}>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
                 className={`${style.hidden}  max-w-xs lg:ml-1  lg:mx-0 mx-5`}
@@ -223,8 +227,9 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
                   {isPlaying ? <span>❚❚</span> : <span>&#9654;</span>}
                 </button>
                 <audio ref={audioRef} src={aboutMe} />
-              </div>
+              </div></animated.div>
 
+              <animated.div ref={ref3} style={slideIn3}>
               <p
                 ref={(el) => (elementsRef.current[2] = el)}
                 className={`${style.hidden} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
@@ -237,13 +242,15 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
                With a strong foundation in backend development, databases, and cloud services, 
                I thrive on tackling challenges and collaborating with teams to create innovative digital 
                solutions while staying ahead of tech trends.
-              </p>
-            </div> </div>
+              </p></animated.div>
+            </div>
+            
+
+            </div>
+            
           </div>
 
           </div>
-
-         
 
          
         </div>
@@ -284,4 +291,6 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
 });
 
 export default About;
+
+
 
