@@ -186,7 +186,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
   const slideIn3 = useSpring({
     transform: inView3 ? "translateY(0)" : "translateY(70%)",
     opacity: inView3 ? 1 : 0,
-    config: { tension: 100, friction: 50 },
+    config: { tension: 120, friction: 40 },
   });
 
   return (
