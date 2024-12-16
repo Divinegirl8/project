@@ -174,19 +174,19 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
   const slideIn1 = useSpring({
     transform: inView1 ? "translateY(0)" : "translateY(100%)",
     opacity: inView1 ? 1 : 0,
-    config: { tension: 120, friction: 40 },
+    config: { tension: 150, friction: 60 },
   });
 
   const slideIn2 = useSpring({
     transform: inView2 ? "translateY(0)" : "translateY(100%)",
     opacity: inView2 ? 1 : 0,
-    config: { tension: 120, friction: 40 },
+    config: { tension: 150, friction: 60 },
   });
 
   const slideIn3 = useSpring({
     transform: inView3 ? "translateY(0)" : "translateY(100%)",
     opacity: inView3 ? 1 : 0,
-    config: { tension: 120, friction: 40 },
+    config: { tension: 150, friction: 60 },
   });
 
   return (
@@ -222,7 +222,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
               >
                 <button
                   onClick={togglePlayPause}
-                  className="px-4 py-2 text-white rounded-full"
+                  className="px-4 py-8 text-white rounded-full"
                 >
                   {isPlaying ? <span>❚❚</span> : <span>&#9654;</span>}
                 </button>
