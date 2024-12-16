@@ -215,10 +215,10 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
             <div className="lg:mb-0 mb-20 ">
              
             <div >
-            <animated.div ref={ref2} style={slideIn2}>
+            <animated.div ref={ref3} style={slideIn3}>
               <div
                 ref={(el) => (elementsRef.current[1] = el)}
-                className={`${style.hidden}  max-w-xs lg:ml-1  lg:mx-0 mx-5`}
+                className={`${style.hidden}  max-w-xs lg:ml-1  mt-8 lg:mx-0 mx-5`}
               >
                 <button
                   onClick={togglePlayPause}
