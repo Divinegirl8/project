@@ -53,7 +53,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
     return (
         <div className='bg-[#000] w-full pb-16 lg:justify-center lg:items-center lg:flex lg:flex-col overflow-x-hidden overflow-y-hidden' ref={ref}>
 
-                   <div className="lg:mr-[20rem]">
+                   <div className={`lg:mr-[20rem] ${style.port}`}>
                  <animated.div ref={ref1} style={slideIn1}>
                  <div className="flex  ml-5 lg:pt-16">
                             <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
@@ -61,13 +61,13 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                                     className="fa-solid fa-circle-dot"
                                     style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}
                                 ></i>
-                                <p className="font-normal text-white font-fontInter uppercase lg;text-[13px] text-[12px] lg:mt-0 mt-[1px]">Portfolio</p>
+                                <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] lg:mt-0 mt-[1px]">Portfolio</p>
                             </div>
                         </div>
                  </animated.div>
 
                        <animated.div ref={ref2} style={slideIn2}>
-                       <h1 className=" mt-10  lg:text-[50px] text-[35px] text-white  ml-5">Projects </h1>
+                       <h1 className={`mt-10  lg:text-[50px] text-[35px] text-white  ml-5 ${style.projects}`}>Projects </h1>
                        </animated.div>
                   </div>
 
@@ -80,11 +80,11 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     {/* Image */}
                     <img
                         src={passGen}
-                        className="lg:w-[50rem] lg:h-[30rem] w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 lg:rounded-[25px] rounded-[15px]"
+                        className={`lg:w-[50rem] lg:h-[30rem] w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 lg:rounded-[25px] rounded-[15px] ${style.passGen}`}
                     />
 
                     {/* Skills */}
-                    <div className="top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block">
+                    <div className={`top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block ${style.skillsUsed}`}>
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Java
                         </span>
