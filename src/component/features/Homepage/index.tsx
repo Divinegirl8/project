@@ -97,11 +97,11 @@ const Homepage: React.FC = () => {
       <div className={`${style.pageContent} absolute inset-0 ${isAnimationComplete ? style.visible : ''}`}>
         <CustomCursor isShown={true} />
         
-        <div className={`border-gray-500 border-[0.5px] w-[3rem] h-[18rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-10 ${style.nav}`}>
+        <div className={`border-gray-500 border-[0.5px] w-[3rem] h-[18rem] xl:w-[3rem] xl:h-[18rem] lg:w-[2rem] lg:h-[16rem] rounded-[20px] items-center fixed right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex flex-col text-white text-center gap-3 z-50 pt-10 ${style.nav}`}>
           {(Object.keys(sectionRefs) as Array<keyof typeof sectionRefs>).map((section) => (
             <div className="relative group" key={section}>
               <button
-                className={`hover:text-yellow-600 text-[20px] cursor-pointer ${style.navBtn}`}
+                className={`hover:text-yellow-600 text-[20px] xl:text-[20px] lg:text-[14px] cursor-pointer ${style.navBtn}`}
                 onClick={() => handleIconClick(section, sectionRefs[section])}
               >
                 <i
