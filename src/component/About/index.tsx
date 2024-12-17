@@ -193,7 +193,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
     <>
    
       <div className={style.header} ref={ref}>
-        <div className={`text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex lg:ml-10 overflow-y-hidden ${style.abtDiv}`}>
+        <div className={`text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex xl:ml-10 lg:ml-[8rem] overflow-y-hidden ${style.abtDiv}`}>
          
        
         <div className="justify-center items-center flex lg:pt-10">
@@ -232,7 +232,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
               <animated.div ref={ref3} style={slideIn3}>
               <p
                 ref={(el) => (elementsRef.current[2] = el)}
-                className={`${style.abtTxt} lg:max-w-xs  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
+                className={`${style.abtTxt} lg:max-w-[35rem]  xl:max-w-xl  lg:mx-0 lg:ml-5 mx-6 text-[#999999]`}
               >
                
                I'm a dedicated Software Engineer with expertise in crafting scalable, 
