@@ -107,4 +107,14 @@
      }
    }
    }
+
+   @media (min-width:1024px) and (max-width: 1099px){
+    .nav{
+      width: 2rem;
+      height: 16rem;
+    }
+    .navBtn{
+      font-size: 14px;
+    }
+ }
   

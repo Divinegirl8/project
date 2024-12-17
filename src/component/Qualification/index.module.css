@@ -1,0 +1,12 @@
+
+
+@media (min-width:1024px) and (max-width: 1099px){
+    .edu{
+        font-size: 40px;
+    }
+
+    .qual{
+        margin-right: 14rem;
+    }
+
+}

@@ -1,0 +1,7 @@
+@media (min-width:1024px) and (max-width: 1099px){
+   .btn{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 15px;
+   }
+}

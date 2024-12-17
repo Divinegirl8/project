@@ -316,7 +316,7 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
           <div className="lg:justify-center lg:flex lg:flex-col lg:items-center"> 
 
         
-               <div className="lg:ml-[26rem]">
+               <div className={`lg:ml-[26rem] ${style.skills}`}>
 
 
             <div className="flex ml-5 lg:pt-[4rem] pt-8 ">
@@ -333,10 +333,10 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
 
 
                         <animated.div ref={ref2} style={slideIn2}>
-                        <h1 className="text-white   ml-5 text-[35px] lg:text-[50px]  mt-10">Technologies I Use</h1>
+                        <h1 className={`text-white   ml-5 text-[35px] lg:text-[50px]  mt-10 ${style.tech}`}>Technologies I Use</h1>
                         </animated.div>
 
-                        <div className="mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4 hidden lg:block overflow-x-hidden">
+                        <div className={`mt-10 lg:w-[80%]  mx-5 h-auto bg-white rounded-[10px] p-4 hidden lg:block overflow-x-hidden ${style.skillCont}`}>
               
                         <div>
                   <div className="grid grid-cols-4  lg:grid-cols-9 gap-5 sm:grid-cols-6 md:grid-cols-6">

@@ -18,4 +18,19 @@
     transform: scale(1.2) rotate(10deg);
 
   }
+  @media (min-width:1024px) and (max-width: 1099px){
+
+  .tech{
+    font-size: 40px;
+  }
+  .skillCont{
+    width: 80%;
+  }
+
+  .skills{
+    margin-left: 20rem;
+  }
+
+
+}
   

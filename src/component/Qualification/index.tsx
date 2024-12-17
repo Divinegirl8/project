@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
+import style from "./index.module.css"
 
 const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   const [ref1, inView1] = useInView({ triggerOnce: false });
@@ -38,7 +39,7 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
     <div className="bg-[#000] lg:mt-0  w-full pb-16 overflow-x-hidden lg:justify-center lg:items-center flex flex-col" >
      <animated.div ref={ref1} style={slideIn1}>
-     <div className="  ml-5 lg:ml-0  lg:mr-[20rem] lg:pt-[10rem] pt-10">
+     <div className={`ml-5 lg:ml-0  lg:mr-[20rem] lg:pt-[10rem] pt-10 ${style.qual}`}>
         <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1" ref={ref}>
           <i className="fa-solid fa-file" style={{ color: "#fff", paddingTop: "3px", fontSize: "13px" }}></i>
           <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px] lg:mt-0 mt-[1px] ">Qualification</p>
@@ -48,7 +49,7 @@ const Qualification = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
       <div className="text-white  ml-5">
        <animated.div ref={ref2} style={slideIn2}>
-       <h1 className="mt-10 lg:text-[50px] text-[35px]">
+       <h1 className={`mt-10 lg:text-[50px] text-[35px] ${style.edu}`}>
           <span className="text-yellow-600">Experience </span>& Education
         </h1>
        </animated.div>

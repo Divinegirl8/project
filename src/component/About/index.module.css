@@ -94,6 +94,14 @@ body {
 
  
 }
+@media (min-width:1024px) and (max-width: 1099px){
+  .abtTxt{
+    max-width: 35rem;
+  }
+  .abtDiv{
+    margin-left: 8rem;
+  }
+}
 /* 
 .hidden {
   opacity: 0;

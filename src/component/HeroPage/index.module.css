@@ -58,3 +58,52 @@
     );
   }
 }
+
+@media (min-width:1024px) and (max-width: 1099px){
+  .boxIntro{
+    width: 15rem;
+    left: 10px;
+    height: 32rem;
+    top: 25px;
+  }
+  .myLogo{
+    width: 6rem;
+  }
+  .myFoto{
+    width: 10rem;
+    height: 10rem;
+  }
+  .myText{
+    font-size: 15px;
+  }
+  .copy{
+    font-size: 9px;
+  }
+
+  .connect{
+    width: 35px;
+    height: 35px;
+  }
+  .butn{
+    margin-top: 40px;
+  }
+
+  .name{
+    font-size: 50px;
+    margin-left: 5rem;
+  }
+
+  .introduce {
+   margin-right: 15rem;
+  }
+
+  .ctn{
+    font-size: 50px;
+  }
+  .yrs{
+    font-size: 15px;
+  }
+  .mainBox{
+    margin-top: 11rem;
+  }
+}
