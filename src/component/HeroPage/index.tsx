@@ -92,7 +92,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                 <div className="lg:hidden">
                     
-                    <p className=" font-normal text-[40px] text-white font-fontInter pt-[3rem] ml-5 ">
+                    <p className=" font-normal text-[40px] sm:text-[58px] text-white font-fontInter pt-[3rem] ml-5 ">
                         Hi, I am James <span className={`text-yellow-600 ${style.txt} `}>DivineMercy</span>, A Software Engineer
                     </p>
                     
@@ -117,7 +117,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     <p>A Software Engineer</p>
                     </div> */}
 
-                      <div className={`font-normal xl:text-[68px] lg:text-[50px] text-[68px] text-white font-fontInter xl:ml-[7rem] ml-[7rem] lg:ml-[5rem] mt-[6rem] ${style.name}`}>
+                      <div className={`font-normal xl:text-[68px] lg:text-[50px] text-[68px]  text-white font-fontInter xl:ml-[7rem] ml-[7rem] lg:ml-[5rem] mt-[6rem] ${style.name}`}>
                     <p>
                         Hi, I am James <span className={`${style.first} ml-[20px] `}> DivineMercy</span><span className={` ${style.second}  ml-[20px]`}>DivineMercy,</span>
                     </p>

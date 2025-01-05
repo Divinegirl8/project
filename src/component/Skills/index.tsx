@@ -316,7 +316,7 @@ const Skills = React.forwardRef<HTMLDivElement, {}>((props, ref)=>{
           <div className="lg:justify-center lg:flex lg:flex-col lg:items-center"> 
 
         
-               <div className={`xl:ml-[26rem] lg:ml-[20rem] ${style.skills}`}>
+               <div className={`xl:ml-[26rem]  ${style.skills}`}>
 
 
             <div className="flex ml-5 lg:pt-[4rem] pt-8 ">

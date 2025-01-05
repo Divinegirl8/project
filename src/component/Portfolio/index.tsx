@@ -53,7 +53,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
     return (
         <div className='bg-[#000] w-full pb-16 lg:justify-center lg:items-center lg:flex lg:flex-col overflow-x-hidden overflow-y-hidden' ref={ref}>
 
-                   <div className={`lg:mr-[20rem] ${style.port}`}>
+                   <div className={`xl:mr-[20rem] lg:mr-[15rem] ${style.port}`}>
                  <animated.div ref={ref1} style={slideIn1}>
                  <div className="flex  ml-5 lg:pt-16">
                             <div className="flex flex-row gap-2 justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px] pt-1">
@@ -67,7 +67,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                  </animated.div>
 
                        <animated.div ref={ref2} style={slideIn2}>
-                       <h1 className={`mt-10  lg:text-[50px] text-[35px] text-white  ml-5 ${style.projects}`}>Projects </h1>
+                       <h1 className={`mt-10  xl:text-[50px] lg:text-[40px] text-[35px] text-white  ml-5 ${style.projects}`}>Projects </h1>
                        </animated.div>
                   </div>
 
@@ -80,11 +80,11 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     {/* Image */}
                     <img
                         src={passGen}
-                        className={`lg:w-[50rem] lg:h-[30rem] w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 lg:rounded-[25px] rounded-[15px] ${style.passGen}`}
+                        className={`xl:w-[50rem] lg:h-[30rem] sm:w-[35rem] sm:h-[20rem] lg:w-[40rem] w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 lg:rounded-[25px] rounded-[15px] ${style.passGen}`}
                     />
 
                     {/* Skills */}
-                    <div className={`top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block ${style.skillsUsed}`}>
+                    <div className={`top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block `}>
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Java
                         </span>
@@ -145,10 +145,10 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                         {/* Buttons */}
                         <div>
-                            <button className="bg-white text-black lg:px-4   px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px]">
+                            <button className="bg-white text-black lg:px-4   px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px] sm:text-[15px]">
                                 <a href="https://password-generator-react-pi-ruddy.vercel.app/" target="_blank">go to website</a>
                             </button>
-                            <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px]">
+                            <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 lg:hover:bg-gray-200 text-[12px] lg:text-[15px] sm:text-[15px]">
                                 <a href="https://password-generator-java.onrender.com/documentation/password-generator/swagger-ui/index.html#/" target="_blank">go to endpoint</a>
                             </button>
                         </div>
@@ -163,7 +163,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     {/* Image */}
                     <img
                         src={dashboard}
-                        className="w-[50rem] h-[30rem] object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px]"
+                        className="xl:w-[50rem] h-[30rem] lg:w-[40rem] object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px]"
                     />
 
                     {/* Skills */}
@@ -217,7 +217,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     {/* Image */}
                     <img
                         src={myweb}
-                        className="lg:w-[50rem] lg:h-[30rem]  w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px] border-[1px] border-gray-500 p-8"
+                        className="xl:w-[50rem] lg:h-[30rem] sm:w-[35rem] sm:h-[20rem] lg:w-[40rem] w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px] border-[1px] border-gray-500 p-8"
                     />
 
                     {/* Skills */}
@@ -280,7 +280,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     {/* Image */}
                     <img
                         src={blog}
-                        className="lg:w-[50rem] lg:h-[30rem]  w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px] border-[1px] border-gray-500  p-1"
+                        className="xl:w-[50rem] lg:h-[30rem] sm:w-[35rem] sm:h-[20rem] lg:w-[40rem]  w-[20rem] h-[15rem] mx-auto lg:mx-0 object-cover transition-opacity duration-300 group-hover:opacity-75 rounded-[25px] border-[1px] border-gray-500  p-1"
                     />
 
                     {/* Skills */}
@@ -325,10 +325,10 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     <div className="lg:absolute lg:inset-0  lg:ml-0 ml-3 lg:flex lg:flex-col items-center justify-center lg:opacity-0 lg:bg-black lg:bg-opacity-30 lg:group-hover:opacity-100 lg:transition-opacity duration-300 lg:mt-0 mt-5">
                         {/* Buttons */}
                         <div>
-                            <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 hover:bg-gray-200 text-[12px] lg:text-[15px]">
+                            <button className="bg-white text-black lg:px-4 px-2 py-2 rounded-md mx-2 hover:bg-gray-200 text-[12px] lg:text-[15px] sm:text-[15px]">
                                 <a href="https://quincy-website.vercel.app/" target="_blank">go to website</a>
                             </button>
-                            <button className="bg-white text-black lg:px-4  px-2 py-2 rounded-md mx-2 hover:bg-gray-200 text-[12px] lg:text-[15px]">
+                            <button className="bg-white text-black lg:px-4  px-2 py-2 rounded-md mx-2 hover:bg-gray-200 text-[12px] lg:text-[15px] sm:text-[15px]">
                                 <a href="https://github.com/Divinegirl8/quincy_website" target="_blank">go to github</a>
                             </button>
                         </div>

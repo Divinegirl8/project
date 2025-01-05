@@ -28,6 +28,36 @@
     margin-left: 20rem;
   }
 
-
 }
+
+
+@media (min-width:1100px) and (max-width: 1200px){  
   
+  .tech{
+  font-size: 40px;
+}
+
+.skills{
+  margin-left: 22rem;
+}
+}
+
+@media (min-width:1201px) and (max-width: 1249px){  
+  
+  .tech{
+  font-size: 40px;
+}
+
+.skills{
+  margin-left: 22rem;
+}
+}
+
+@media (min-width:1249px) and (max-width: 1279px){  
+  
+
+
+.skills{
+  margin-left: 25rem;
+}
+}
