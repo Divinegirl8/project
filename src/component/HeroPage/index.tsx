@@ -95,13 +95,17 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     <p className=" font-normal text-[40px] sm:text-[50px] text-white font-fontInter pt-[3rem] ml-5 ">
                         Hi, I am James <span className={`text-yellow-600 ${style.txt} `}>DivineMercy</span>, A Software Engineer
                     </p>
+
+                    <div className="text-[#e4e3e399] justify-center ml-5 font-fontInter mt-5">
+                        <p>I create simple, effective solutions with code, turning complicated problems into easy-to-use systems. I enjoy making things work smoothly and improving how people interact with technology.</p>
+                    </div>
                     
                 </div>
 
            
 
 
-                 <div className="lg:flex flex-col text-white justify-center items-center mt-[10rem] hidden">
+                 <div className="lg:flex flex-col text-white justify-center items-center mt-[8rem] hidden">
                 <div className={`xl:mr-[20rem] mr-[22rem] lg:mr-[14rem] ${style.introduce}`}>
                 <div className="flex flex-row gap-2 items-center justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px]">
                     <i className="fa-solid fa-house" style={{ color: "#fff", fontSize: "13px" }}></i>
@@ -125,6 +129,10 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                 
                     <p>A Software Engineer</p>
                     </div> 
+
+                    <div className="text-[#e4e3e399] xl:ml-[19.5rem]  lg:ml-[8rem] justify-center  lg:w-[30rem] xl:w-[49rem] font-fontInter mt-5">
+                        <p>I create simple, effective solutions with code, turning complicated problems into easy-to-use systems. I enjoy making things work smoothly and improving how people interact with technology..</p>
+                    </div>
 
 
 

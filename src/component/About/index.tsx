@@ -193,7 +193,7 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
     <>
    
       <div className={style.header} ref={ref}>
-        <div className={`text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex xl:ml-20 lg:ml-[9rem] overflow-y-hidden ${style.abtDiv}`}>
+        <div className={`text-white lg:justify-center lg:pb-[5.5rem] lg:items-center lg:flex xl:ml-[15rem] lg:ml-[9rem] overflow-y-hidden ${style.abtDiv}`}>
          
        
         <div className="justify-center items-center flex lg:pt-10">
@@ -212,7 +212,13 @@ const About = React.forwardRef<HTMLDivElement, {}>((props, ref)=> {
               </div>
             </div></animated.div>
 
-            <div className="lg:mb-0 mb-20 ">
+            <animated.div ref={ref2} style={slideIn2}>
+              <div>
+                <h1 className="text-white ml-5 lg:mt-0 mt-16 lg:text-[45px] xl:w-[45rem] lg:w-[30rem] text-[30px] sm:text-[40px] sm:w-[40rem] font-light">Every great software solution begins with an even <span className="text-yellow-600">better story</span></h1>
+              </div>
+            </animated.div>
+
+            <div className="lg:mb-0 mb-20 lg:mt-8 ">
              
             <div >
             <animated.div ref={ref3} style={slideIn3}>
