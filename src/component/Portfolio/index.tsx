@@ -84,7 +84,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     />
 
                     {/* Skills */}
-                    <div className={`top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden lg:block `}>
+                    <div className={`top-[27rem] ml- 1 lg:mx-2 absolute  inset-0 hidden xl:block `}>
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Java
                         </span>
@@ -109,6 +109,42 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Vercel
                         </span>
+
+                    </div>
+
+                    <div className={`top-[24rem] ml- 1 lg:mx-2 absolute  inset-0 hidden ${style.skillz}`}>
+                        <div>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Java
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            TypeScript
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Render
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            TailwindCss
+                        </span>
+                        </div>
+
+                        <div className="mt-5">
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Docker
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Github
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            React
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Vercel
+                        </span>
+                        </div>
+
+                   
+                       
 
                     </div>
 
@@ -167,7 +203,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     />
 
                     {/* Skills */}
-                    <div className="top-[27rem] ml-1 lg:mx-10 absolute inset-0 hidden lg:block">
+                    <div className="top-[27rem] ml-1 lg:mx-10 absolute inset-0 hidden xl:block">
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             React
                         </span>
@@ -189,6 +225,35 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Github
                         </span>
+                    </div>
+
+                    <div className={`top-[24rem]  lg:mx-5 absolute inset-0 hidden ${style.skillz2}`}>
+                        <div>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            React
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            TypeScript
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            GraphqlZero
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Vercel
+                        </span>
+                        </div>
+
+                        <div className="mt-5">
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Redux
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            TailwindCss
+                        </span>
+                        <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
+                            Github
+                        </span>
+                        </div>
                     </div>
 
                     <div className="absolute inset-0  flex flex-col items-center justify-center opacity-0 bg-black bg-opacity-30 group-hover:opacity-100 transition-opacity duration-300">

@@ -92,7 +92,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                 <div className="lg:hidden">
                     
-                    <p className=" font-normal text-[40px] sm:text-[58px] text-white font-fontInter pt-[3rem] ml-5 ">
+                    <p className=" font-normal text-[40px] sm:text-[50px] text-white font-fontInter pt-[3rem] ml-5 ">
                         Hi, I am James <span className={`text-yellow-600 ${style.txt} `}>DivineMercy</span>, A Software Engineer
                     </p>
                     
