@@ -7,6 +7,7 @@ import style from "./index.module.css"
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 
+
 const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
     const [ref1, inView1] = useInView({ triggerOnce: false });
     const [ref2, inView2] = useInView({ triggerOnce: false });
@@ -112,7 +113,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
                     </div>
 
-                    <div className={`top-[24rem] ml- 1 lg:mx-2 absolute  inset-0 hidden ${style.skillz}`}>
+                    <div className={`top-[24rem] ml- 1 lg:mx-2 absolute  inset-0  hidden lg:block xl:hidden ${style.skillz}`}>
                         <div>
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             Java
@@ -227,7 +228,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                         </span>
                     </div>
 
-                    <div className={`top-[24rem]  lg:mx-5 absolute inset-0 hidden ${style.skillz2}`}>
+                    <div className={`top-[24rem]  lg:mx-5 absolute inset-0 hidden lg:block xl:hidden ${style.skillz2}`}>
                         <div>
                         <span className="bg-black text-white px-4 py-2 rounded-md mx-2 text-sm font-medium">
                             React
