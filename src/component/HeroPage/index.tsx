@@ -26,7 +26,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
         <div className={`cursor-none bg-gradient-to-b from-black via-black to-transparent lg:pb-[15rem] pb-[45rem]  relative  ${style.mainBox}`} ref={ref}>
             <div className="">
 
-                <div className={`border-gray-500 border-[0.5px] xl:w-[21rem] lg:h-[32rem] xl:h-[39rem] h-[39rem] mt-5  px-2 mx-5 lg:px-0 rounded-[20px] lg:left-5 lg:top-[10px] lg:my-[5rem] sm:mx-[2rem] lg:fixed z-50 ${style.boxIntro}`}>
+                <div className={`border-gray-500 border-[0.5px] xl:w-[21rem] lg:h-[32rem] xl:h-[39rem] h-[39rem] mt-5  px-2 mx-5 lg:px-0 rounded-[20px] lg:left-5  xl:top-[10px] lg:my-[5rem] sm:mx-[2rem] lg:fixed z-50 ${style.boxIntro}`}>
                    
                    <div className="mt-5 ml-7">
                    <img src={logo} className={`w-[9rem] xl:w-[9rem] lg:w-[6rem] ${style.myLogo}`} />
@@ -102,7 +102,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
 
 
                  <div className="lg:flex flex-col text-white justify-center items-center mt-[10rem] hidden">
-                <div className={`xl:mr-[22rem] mr-[22rem] lg:mr-[14rem] ${style.introduce}`}>
+                <div className={`xl:mr-[20rem] mr-[22rem] lg:mr-[14rem] ${style.introduce}`}>
                 <div className="flex flex-row gap-2 items-center justify-center border-gray-500 border w-[10rem] h-[30px] rounded-[20px]">
                     <i className="fa-solid fa-house" style={{ color: "#fff", fontSize: "13px" }}></i>
                     <p className="font-normal text-white font-fontInter uppercase lg:text-[13px] text-[12px]">Introduce</p>
@@ -117,7 +117,7 @@ const HeroPage = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
                     <p>A Software Engineer</p>
                     </div> */}
 
-                      <div className={`font-normal xl:text-[68px] lg:text-[50px] text-[68px]  text-white font-fontInter xl:ml-[7rem] ml-[7rem] lg:ml-[5rem] mt-[6rem] ${style.name}`}>
+                      <div className={`font-normal xl:text-[68px] lg:text-[50px] text-[68px]  text-white font-fontInter xl:ml-[8rem] ml-[7rem] lg:ml-[5rem] mt-[6rem]  ${style.name}`}>
                     <p>
                         Hi, I am James <span className={`${style.first} ml-[20px] `}> DivineMercy</span><span className={` ${style.second}  ml-[20px]`}>DivineMercy,</span>
                     </p>
